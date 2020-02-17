@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import { Reset } from 'styled-reset';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Header from './components/Header.js'
+import Footer from './components/Footer.js'
+import Main from './components/Main.js';
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+`
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      mainId: 1
+    }
+    this.changeId = this.changeId.bind(this);
+  }
+
+  changeId(id) {
+    this.setState({mainId: parseInt(id)})
+  }
+
+  render() {
+    return (
+      <Wrapper>
+        <Reset />
+        <Header />
+        <Main id={this.state.mainId} />
+        <Footer changeId={this.changeId} />
+      </Wrapper>
+    );
+  }
 }
 
 export default App;
