@@ -20,6 +20,7 @@ const NavButton = styled.button`
   background: red;
   border: none;
   font-size: 1.5em;
+  cursor: pointer;
 `;
 
 class Footer extends Component {

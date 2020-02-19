@@ -17,15 +17,15 @@ const Projects = styled.div`
   gap: 10px;
 
 
-  @media only screen and (min-width: 30em) {
+  @media only screen and (min-width: 41em) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media only screen and (min-width: 42em) {
+  @media only screen and (min-width: 62em) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  @media only screen and (min-width: 64em) {
+  @media only screen and (min-width: 84em) {
     grid-template-columns: repeat(4, 1fr);
   }
 `;

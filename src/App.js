@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { Reset } from "styled-reset";
+import GlobalStyle from './GlobalStyle.js';
 
 import Header from "./components/Header.js";
 import Footer from "./components/Footer.js";
@@ -30,6 +31,7 @@ class App extends Component {
     return (
       <Wrapper>
         <Reset />
+        <GlobalStyle />
         <Header />
         <Main id={this.state.mainId} />
         <Footer changeId={this.changeId} />
