@@ -1,12 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-const Intro = styled.p` 
+const Intro = styled.p`
   background: yellow;
   padding: 10px;
   margin: 15px 0;
   border: 2px solid black;
-`
+`;
 
 const Projects = styled.div`
   display: grid;
@@ -25,15 +25,15 @@ const Projects = styled.div`
 
   @media only screen and (min-width: 64em) {
     grid-template-columns: repeat(4, 1fr);
-  } 
-`
+  }
+`;
 
 const Project = styled.p`
   background: orange;
   height: 200px;
   width: 200px;
   border: 2px solid black;
-`
+`;
 
 function Home() {
   return (
@@ -45,7 +45,7 @@ function Home() {
         <Project>Third</Project>
       </Projects>
     </div>
-  )
+  );
 }
 
 export default Home;

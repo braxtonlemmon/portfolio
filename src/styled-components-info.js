@@ -1,23 +1,27 @@
-import React from 'react';
-import styled, { ThemeProvider, createGlobalStyle, css } from 'styled-components';
-import { Reset } from 'styled-reset';
-import './App.css';
-import Header from './components/Header.js'
-import Footer from './components/Footer.js'
+import React from "react";
+import styled, {
+  ThemeProvider,
+  createGlobalStyle,
+  css
+} from "styled-components";
+import { Reset } from "styled-reset";
+import "./App.css";
+import Header from "./components/Header.js";
+import Footer from "./components/Footer.js";
 
 const GlobalStyle = createGlobalStyle`
   * {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: 2px solid black;
   }
-`
+`;
 
 const theme = {
-  primary: 'orange',
-  secondary: 'pink',
-  alert: 'yellow'
+  primary: "orange",
+  secondary: "pink",
+  alert: "yellow"
   // font: 'Georgia'
-}
+};
 
 // const Button = styled.button`
 //   /* font-family: ${props => props.theme.font}; */
@@ -46,14 +50,14 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-`
+`;
 
-const Intro = styled.p` 
+const Intro = styled.p`
   background: yellow;
   padding: 10px;
   margin: 15px 0;
   border: 2px solid black;
-`
+`;
 
 const Projects = styled.div`
   display: grid;
@@ -73,20 +77,17 @@ const Projects = styled.div`
   @media only screen and (min-width: 64em) {
     grid-template-columns: repeat(4, 1fr);
   }
-  
-`
+`;
 
 const Project = styled.p`
   background: orange;
   height: 200px;
   width: 200px;
   border: 2px solid black;
-`
-
+`;
 
 function App() {
   return (
-
     <ThemeProvider theme={theme}>
       <Wrapper>
         <Reset />
@@ -105,8 +106,8 @@ function App() {
 
 export default App;
 
-
-{/* <div className="App">
+{
+  /* <div className="App">
   <GlobalStyle />
   <H1>Styled Components</H1>
   <form action="">
@@ -114,4 +115,5 @@ export default App;
     <button>Create</button>
     <Button color="secondary">Create</Button>
   </form>
-</div> */}
+</div> */
+}

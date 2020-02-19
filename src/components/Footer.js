@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React, { Component } from "react";
+import styled from "styled-components";
 
 const Nav = styled.footer`
   display: grid;
@@ -11,7 +11,7 @@ const Nav = styled.footer`
   gap: 2px;
   background: black;
   padding: 2px 0;
-`
+`;
 
 const NavButton = styled.button`
   height: 100%;
@@ -20,23 +20,17 @@ const NavButton = styled.button`
   background: red;
   border: none;
   font-size: 1.5em;
-`
+`;
 
 class Footer extends Component {
   render() {
     return (
       <Nav>
-        <NavButton
-          onClick={() => this.props.changeId(1)}
-        >Home</NavButton>
-        <NavButton
-          onClick={() => this.props.changeId(2)}
-        >About</NavButton>
-        <NavButton
-          onClick={() => this.props.changeId(3)}
-        >Contact</NavButton>
+        <NavButton onClick={() => this.props.changeId(1)}>Home</NavButton>
+        <NavButton onClick={() => this.props.changeId(2)}>About</NavButton>
+        <NavButton onClick={() => this.props.changeId(3)}>Contact</NavButton>
       </Nav>
-    )
+    );
   }
 }
 

@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import Home from './Home.js';
-import About from './About.js';
-import Contact from './Contact.js';
+import React, { Component } from "react";
+import styled from "styled-components";
+import Home from "./Home.js";
+import About from "./About.js";
+import Contact from "./Contact.js";
 
 class Main extends Component {
   render() {
@@ -13,7 +13,7 @@ class Main extends Component {
         {this.props.id === 2 && <About />}
         {this.props.id === 3 && <Contact />}
       </div>
-    )
+    );
   }
 }
 
