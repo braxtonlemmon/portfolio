@@ -23,7 +23,7 @@ class App extends Component {
   }
 
   changeId(id) {
-    this.setState({ mainId: parseInt(id) });
+    this.setState({ mainId: id });
   }
 
   render() {

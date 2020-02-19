@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import Project from "./Project.js";
+
 
 const Intro = styled.p`
   background: yellow;
@@ -13,7 +15,7 @@ const Projects = styled.div`
   margin-bottom: 50px;
   grid-template-columns: 1fr;
   gap: 10px;
-  background: green;
+
 
   @media only screen and (min-width: 30em) {
     grid-template-columns: 1fr 1fr;
@@ -28,21 +30,36 @@ const Projects = styled.div`
   }
 `;
 
-const Project = styled.p`
-  background: orange;
-  height: 200px;
-  width: 200px;
-  border: 2px solid black;
-`;
-
 function Home() {
   return (
     <div>
       <Intro>This is a page about me</Intro>
       <Projects>
-        <Project>First</Project>
-        <Project>Second</Project>
-        <Project>Third</Project>
+        <Project 
+          img={'odinbook.png'}
+          github={'https://github.com/braxtonlemmon/odin-facebook'}
+          live={'https://murmuring-wave-95625.herokuapp.com/'} 
+        />
+        <Project 
+          img={'chess.png'}
+          github={'https://github.com/braxtonlemmon/chess'}
+          live={'#'}  
+        />
+        <Project 
+          img={'pomodoro.png'}
+          github={'https://github.com/braxtonlemmon/pomodoro'}
+          live={'https://braxtonlemmon.github.io/pomodoro/'}
+        />
+        <Project 
+          img={'weather.png'}
+          github={'https://github.com/braxtonlemmon/weather-app'}
+          live={'https://braxtonlemmon.github.io/weather-app/'}
+        />
+        <Project
+          img={'pitchfork.png'}
+          github={'https://github.com/braxtonlemmon/pitchfork-clone'}
+          live={'https://braxtonlemmon.github.io/pitchfork-clone/'}
+        />
       </Projects>
     </div>
   );

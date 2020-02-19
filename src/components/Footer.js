@@ -7,7 +7,7 @@ const Nav = styled.footer`
   bottom: 0;
   left: 0;
   width: 100%;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2px;
   background: black;
   padding: 2px 0;
@@ -27,8 +27,9 @@ class Footer extends Component {
     return (
       <Nav>
         <NavButton onClick={() => this.props.changeId(1)}>Home</NavButton>
-        <NavButton onClick={() => this.props.changeId(2)}>About</NavButton>
-        <NavButton onClick={() => this.props.changeId(3)}>Contact</NavButton>
+        <NavButton onClick={() => this.props.changeId(2)}>Music</NavButton>
+        <NavButton onClick={() => this.props.changeId(3)}>About</NavButton>
+        <NavButton onClick={() => this.props.changeId(4)}>Contact</NavButton>
       </Nav>
     );
   }
