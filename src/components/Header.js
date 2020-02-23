@@ -1,17 +1,19 @@
 import React from "react";
 import styled from "styled-components";
+import { H1 } from './shared/Headings.js';
+
 
 const HeaderBar = styled.header`
   width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: red;
 `;
-const H1 = styled.h1`
-  font-size: 3rem;
-  color: blue;
-`;
+
 function Header() {
   return (
     <HeaderBar>
-      <H1>Braxton Lemmon</H1>
+      <H1>BL</H1>
     </HeaderBar>
   );
 }

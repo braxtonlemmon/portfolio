@@ -18,6 +18,7 @@ import prettierIcon from '@iconify/icons-cib/prettier';
 import rubyIcon from '@iconify/icons-cib/ruby';
 import postgresqlIcon from '@iconify/icons-cib/postgresql';
 import mySvg from '../Ableton.svg';
+import { H2 } from './shared/Headings.js';
 
 const AboutWrapper = styled.div`
   margin: 10px 50px;
@@ -55,6 +56,7 @@ class About extends Component {
     const size = "3.5em";
     return (
       <AboutWrapper>
+        <H2>About</H2>
         <Stamp>
           <Abletons></Abletons>
           <Label>Ableton Live</Label>

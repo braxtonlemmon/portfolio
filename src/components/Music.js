@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ReactPlayer from 'react-player';
+import { H2 } from './shared/Headings.js';
 
 const Player = () => (
   <ReactPlayer
@@ -26,6 +27,7 @@ const RelativeWrapper = styled.div`
 function Music() {
   return (
     <RelativeWrapper>
+      <H2>Music Production</H2>
       <AbsolutePlayer />
     </RelativeWrapper>
   )
