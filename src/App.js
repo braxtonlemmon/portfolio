@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Reset } from "styled-reset";
 import GlobalStyle from './GlobalStyle.js';
+import { Transition } from 'react-transition-group';
 
 import Header from "./components/Header.js";
 import Footer from "./components/Footer.js";
@@ -18,9 +19,18 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      mainId: 1
+      mainId: 1,
+      animate: true
     };
     this.changeId = this.changeId.bind(this);
+    this.doAnimate = this.doAnimate.bind(this);
+  }
+
+  doAnimate() {
+    this.setState({ animate: true });
+    setTimeout(() => {
+      this.setState({ animate: false });
+    }, 3000);
   }
 
   changeId(id) {
@@ -33,8 +43,13 @@ class App extends Component {
         <Reset />
         <GlobalStyle />
         <Header />
-        <Main id={this.state.mainId} />
-        <Footer changeId={this.changeId} />
+        <Transition in={this.state.animate} timeout={600}>
+          <Main id={this.state.mainId} state={this.state} />
+        </Transition>
+        <Footer 
+          changeId={this.changeId} 
+          doAnimate={this.doAnimate}
+        />
       </Wrapper>
     );
   }

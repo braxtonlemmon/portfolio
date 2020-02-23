@@ -11,6 +11,7 @@
     "react-icons": "^3.9.0",
     "react-player": "^1.15.2",
     "react-scripts": "^3.4.0",
+    "react-transition-group": "^4.3.0",
     "styled-components": "^5.0.1",
     "styled-reset": "^4.1.0"
   },

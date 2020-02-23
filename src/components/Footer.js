@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
+
 const Nav = styled.footer`
   display: grid;
   position: fixed;
@@ -24,13 +25,38 @@ const NavButton = styled.button`
 `;
 
 class Footer extends Component {
+  constructor(props) {
+    super(props)
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+
+
+  handleClick(e) {
+    const id = parseInt(e.target.id);
+    this.props.changeId(id);
+    this.props.doAnimate();
+  }
+
   render() {
     return (
       <Nav>
-        <NavButton onClick={() => this.props.changeId(1)}>Home</NavButton>
-        <NavButton onClick={() => this.props.changeId(2)}>Music</NavButton>
-        <NavButton onClick={() => this.props.changeId(3)}>About</NavButton>
-        <NavButton onClick={() => this.props.changeId(4)}>Contact</NavButton>
+        <NavButton 
+          id={1}
+          onClick={this.handleClick}
+        >Home</NavButton>
+        <NavButton 
+          id={2}
+          onClick={this.handleClick}
+        >Music</NavButton>
+        <NavButton 
+          id={3}
+          onClick={this.handleClick}
+        >About</NavButton>
+        <NavButton 
+          id={4}
+          onClick={this.handleClick}
+        >Contact</NavButton>
       </Nav>
     );
   }

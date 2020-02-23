@@ -36,7 +36,7 @@ function Home() {
       <Intro>This is a page about me</Intro>
       <Projects>
         <Project 
-          img={'odinbook.png'}
+          img={'odinbook.gif'}
           github={'https://github.com/braxtonlemmon/odin-facebook'}
           live={'https://murmuring-wave-95625.herokuapp.com/'} 
         />
@@ -46,7 +46,7 @@ function Home() {
           live={'#'}  
         />
         <Project 
-          img={'pomodoro.png'}
+          img={'pomodoro.gif'}
           github={'https://github.com/braxtonlemmon/pomodoro'}
           live={'https://braxtonlemmon.github.io/pomodoro/'}
         />
