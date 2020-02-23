@@ -4,6 +4,8 @@ import { Reset } from "styled-reset";
 import GlobalStyle from './GlobalStyle.js';
 import { Transition } from 'react-transition-group';
 
+
+
 import Header from "./components/Header.js";
 import Footer from "./components/Footer.js";
 import Main from "./components/Main.js";
@@ -39,18 +41,21 @@ class App extends Component {
 
   render() {
     return (
-      <Wrapper>
+      <React.Fragment>
         <Reset />
         <GlobalStyle />
-        <Header />
-        <Transition in={this.state.animate} timeout={600}>
-          <Main id={this.state.mainId} state={this.state} />
-        </Transition>
-        <Footer 
-          changeId={this.changeId} 
-          doAnimate={this.doAnimate}
-        />
-      </Wrapper>
+
+        <Wrapper>
+          <Header />
+          <Transition in={this.state.animate} timeout={600}>
+           <Main id={this.state.mainId} state={this.state} />
+          </Transition>
+          <Footer 
+           changeId={this.changeId} 
+            doAnimate={this.doAnimate}
+          />
+        </Wrapper>
+      </React.Fragment>
     );
   }
 }

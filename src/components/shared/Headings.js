@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 
 const H1 = styled.h1`
-  @import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap');
-  font-family: 'Bungee Shade';
-
   font-size: 3rem;
   color: black;
 `
