@@ -17,10 +17,11 @@ const Card = styled.div`
 
 const Buttons = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: column;
   gap: 15px;
   grid-row: 2 / span 1;
   margin: 10px auto;
+
 `;
 
 const Button = styled.a`
@@ -34,6 +35,10 @@ const Button = styled.a`
   justify-content: center;
   align-items: center;
   padding: 0 8px;
+  &:hover {
+    background: pink;
+  }
+  opacity: 1;
 `
 
 function Project(props) {
@@ -44,10 +49,11 @@ function Project(props) {
           href={props.github}
           target="_blank"
         >GITHUB</Button>
+        {props.isLive && 
         <Button 
           href={props.live}
           target="_blank"
-        >LIVE</Button>
+        >LIVE</Button>}
       </Buttons>
     </Card>
   )

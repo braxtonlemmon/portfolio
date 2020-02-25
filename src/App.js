@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Reset } from "styled-reset";
 import GlobalStyle from './GlobalStyle.js';
 import { Transition } from 'react-transition-group';
-
+import { Responsive } from 'responsive-react';
 
 
 import Header from "./components/Header.js";
@@ -49,10 +49,12 @@ class App extends Component {
           <Transition in={this.state.animate} timeout={600}>
            <Main id={this.state.mainId} state={this.state} />
           </Transition>
-          <Footer 
-           changeId={this.changeId} 
-            doAnimate={this.doAnimate}
-          />
+          <Responsive displayIn={["Mobile"]}>
+            <Footer 
+             changeId={this.changeId} 
+             doAnimate={this.doAnimate}
+            />
+          </Responsive>
         </Wrapper>
       </React.Fragment>
     );

@@ -39,26 +39,29 @@ function Home() {
           img={'odinbook.gif'}
           github={'https://github.com/braxtonlemmon/odin-facebook'}
           live={'https://murmuring-wave-95625.herokuapp.com/'} 
+          isLive
         />
         <Project 
           img={'chess.png'}
-          github={'https://github.com/braxtonlemmon/chess'}
-          live={'#'}  
+          github={'https://github.com/braxtonlemmon/chess'}  
         />
         <Project 
           img={'pomodoro.gif'}
           github={'https://github.com/braxtonlemmon/pomodoro'}
           live={'https://braxtonlemmon.github.io/pomodoro/'}
+          isLive
         />
         <Project 
           img={'weather.png'}
           github={'https://github.com/braxtonlemmon/weather-app'}
           live={'https://braxtonlemmon.github.io/weather-app/'}
+          isLive
         />
         <Project
           img={'pitchfork.png'}
           github={'https://github.com/braxtonlemmon/pitchfork-clone'}
           live={'https://braxtonlemmon.github.io/pitchfork-clone/'}
+          isLive
         />
       </Projects>
     </div>

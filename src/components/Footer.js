@@ -22,6 +22,9 @@ const NavButton = styled.button`
   border: none;
   font-size: 1.5em;
   cursor: pointer;
+  &:hover {
+    background: pink;
+  }
 `;
 
 class Footer extends Component {
@@ -29,8 +32,6 @@ class Footer extends Component {
     super(props)
     this.handleClick = this.handleClick.bind(this);
   }
-
-
 
   handleClick(e) {
     const id = parseInt(e.target.id);

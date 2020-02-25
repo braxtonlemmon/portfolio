@@ -12,6 +12,7 @@
     "react-player": "^1.15.2",
     "react-scripts": "^3.4.0",
     "react-transition-group": "^4.3.0",
+    "responsive-react": "^3.0.2",
     "styled-components": "^5.0.1",
     "styled-reset": "^4.1.0",
     "typeface-bungee-shade": "0.0.71"
