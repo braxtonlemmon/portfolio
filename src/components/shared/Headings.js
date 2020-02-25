@@ -10,6 +10,7 @@ const H2 = styled.h2`
 `
 
 const H3 = styled.h3`
+  font-size: 2rem;
 `
 
 const H4 = styled.h4` 
