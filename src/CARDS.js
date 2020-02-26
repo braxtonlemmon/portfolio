@@ -4,6 +4,8 @@ const CARDS = [
     github: 'https://github.com/braxtonlemmon/odin-facebook',
     live: 'https://murmuring-wave-95625.herokuapp.com/',
     isLive: true,
+    x: 0,
+    y: 0,
     info: {
       title: 'The Odin Book',
       about: 'Social networking project',
@@ -11,10 +13,12 @@ const CARDS = [
     },
   },
   { id: 1, 
-    img: 'chess.png', 
+    img: 'chess.gif', 
     github: 'https://github.com/braxtonlemmon/chess',
     live: '',
     isLive: false,
+    x: 0,
+    y: 0,
     info: {
       title: 'Chess',
       about: 'Command line chess game',
@@ -26,6 +30,8 @@ const CARDS = [
     github: 'https://github.com/braxtonlemmon/pomodoro',
     live: 'https://braxtonlemmon.github.io/pomodoro/',
     isLive: true,
+    x: '-15px',
+    y: 0,
     info: {
       title: 'Pomodoro Timer',
       about: 'Productivity tool to manage workflow',
@@ -33,10 +39,12 @@ const CARDS = [
     },
   },
   { id: 3, 
-    img: 'weather.png', 
+    img: 'weather.gif', 
     github: 'https://github.com/braxtonlemmon/weather-app',
     live: 'https://braxtonlemmon.github.io/weather-app/',
     isLive: true,
+    x: '-10px',
+    y: 0,
     info: {
       title: 'Weather Finder',
       about: 'Uses OpenWeather API to obtain live weather data',
@@ -44,10 +52,12 @@ const CARDS = [
     },
   },
   { id: 4, 
-    img: 'pitchfork.png', 
+    img: 'pitchfork.gif', 
     github: 'https://github.com/braxtonlemmon/pitchfork-clone',
     live: 'https://braxtonlemmon.github.io/pitchfork-clone/',
     isLive: true,
+    x: '-10px',
+    y: 0,
     info: {
       title: 'Pitchfork Clone',
       about: 'Visual replication of pitchfork.com',
@@ -59,13 +69,14 @@ const CARDS = [
     github: 'https://github.com/braxtonlemmon/pitchfork-clone',
     live: 'https://braxtonlemmon.github.io/pitchfork-clone/',
     isLive: true,
+    x: 0,
+    y: 0,
     info: {
       title: 'Pitchfork Clone',
       about: 'Visual replication of pitchfork.com',
       technologies: ['HTML', 'CSS'],
     },
-  }
-  
+  } 
 ];
 
 export default CARDS;

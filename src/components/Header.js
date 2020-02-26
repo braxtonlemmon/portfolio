@@ -9,6 +9,7 @@ const HeaderBar = styled.header`
   margin-bottom: 15px;
   padding: 10px;
   background: #303030;
+
   display: flex;
   justify-content: space-between;
 `;
@@ -16,6 +17,7 @@ const HeaderBar = styled.header`
 const Logo = styled(H1)`
   font-family: 'Bungee Shade', sans-serif;
   color: #c9c9c9;
+
 `
 
 const TopNav = styled.div`

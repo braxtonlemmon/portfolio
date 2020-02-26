@@ -13,6 +13,8 @@ const Card = styled.div`
     content: '';
     background: url(${props => props.imgUrl});
     background-size: cover;
+    background-position-x: ${props => props.imgXY.x};
+    background-position-y: ${props => props.imgXY.y};
     position: absolute;
     top: 0;
     left: 0;
@@ -76,6 +78,7 @@ class Project extends Component {
         onMouseLeave={this.handleMouseLeave}
         onClick={this.handleClick}
         imgUrl={process.env.PUBLIC_URL + `${card.img}`}
+        imgXY={{x: card.x, y: card.y}}
       >
         {this.state.isHovered && <CardInfo info={card.info} />}
         <Buttons>
