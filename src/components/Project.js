@@ -74,6 +74,7 @@ class Project extends Component {
       <Card
         onMouseEnter={this.handleMouseEnter}
         onMouseLeave={this.handleMouseLeave}
+        onClick={this.handleClick}
         imgUrl={process.env.PUBLIC_URL + `${card.img}`}
       >
         {this.state.isHovered && <CardInfo info={card.info} />}
