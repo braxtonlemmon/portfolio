@@ -13,6 +13,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  font-family: 'Acme', sans-serif;
 `;
 
 class App extends Component {

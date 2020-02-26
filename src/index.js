@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "typeface-bungee-shade";
+import "typeface-acme"
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
