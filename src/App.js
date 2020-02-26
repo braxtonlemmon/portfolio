@@ -45,7 +45,9 @@ class App extends Component {
         <Reset />
         <GlobalStyle />
         <Wrapper>
-          <Header />
+          <Header 
+            changeId={this.changeId}
+          />
           <Transition in={this.state.animate} timeout={600}>
            <Main id={this.state.mainId} state={this.state} />
           </Transition>

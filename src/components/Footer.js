@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-
+import NavButton from './NavButton.js';
 
 const Nav = styled.footer`
   display: grid;
@@ -12,19 +12,6 @@ const Nav = styled.footer`
   gap: 2px;
   background: black;
   padding: 2px 0;
-`;
-
-const NavButton = styled.button`
-  height: 100%;
-  width: 100%;
-  padding: 5px;
-  background: red;
-  border: none;
-  font-size: 1.5em;
-  cursor: pointer;
-  &:hover {
-    background: pink;
-  }
 `;
 
 class Footer extends Component {

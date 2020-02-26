@@ -4,6 +4,10 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: white;
   }
+
+  html {
+    overflow-y: scroll;
+  }
   
   * {
     box-sizing: border-box;
