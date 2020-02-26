@@ -7,6 +7,7 @@ const H1 = styled.h1`
 
 const H2 = styled.h2`
   font-size: 2.5rem;
+  text-align: center;
 `
 
 const H3 = styled.h3`

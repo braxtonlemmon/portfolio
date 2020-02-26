@@ -21,7 +21,7 @@ const Card = styled.div`
     z-index: -1;
   }
   &:hover:after {
-    opacity: 0.7;
+    opacity: 0.3;
   }
 `;
 
@@ -69,21 +69,22 @@ class Project extends Component {
   }
 
   render() {
+    const card = this.props.card;
     return (
       <Card
         onMouseEnter={this.handleMouseEnter}
         onMouseLeave={this.handleMouseLeave}
-        imgUrl={process.env.PUBLIC_URL + `${this.props.img}`}
+        imgUrl={process.env.PUBLIC_URL + `${card.img}`}
       >
-        {this.state.isHovered && <CardInfo />}
+        {this.state.isHovered && <CardInfo info={card.info} />}
         <Buttons>
           <Button
-            href={this.props.github}
+            href={card.github}
             target="_blank"
           >GITHUB</Button>
-          {this.props.isLive &&
+          {card.isLive &&
             <Button
-              href={this.props.live}
+              href={card.live}
               target="_blank"
             >LIVE</Button>}
         </Buttons>

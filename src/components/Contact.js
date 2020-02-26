@@ -57,7 +57,7 @@ class Contact extends Component {
           <Icon href="mailto:braxtonlemmon@gmail.com" target="_blank">braxtonlemmon@gmail.com</Icon>
         </ContactSection>
         <ContactSection>
-          <Icon href="https://m.me/braxton.lemmon" target="_blank" target="_blank">
+          <Icon href="https://m.me/braxton.lemmon" target="_blank">
             <FaFacebookMessenger size={"2em"} />
           </Icon>
           <Icon href="https://twitter.com/braxtonlemmon" target="_blank">

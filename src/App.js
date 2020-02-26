@@ -4,8 +4,6 @@ import { Reset } from "styled-reset";
 import GlobalStyle from './GlobalStyle.js';
 import { Transition } from 'react-transition-group';
 import { Responsive } from 'responsive-react';
-
-
 import Header from "./components/Header.js";
 import Footer from "./components/Footer.js";
 import Main from "./components/Main.js";
