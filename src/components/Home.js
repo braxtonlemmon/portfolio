@@ -35,29 +35,41 @@ function Home() {
     <div>
       <Intro>This is a page about me</Intro>
       <Projects>
-        <Project 
+        <Project
+          id={0} 
           img={'odinbook.gif'}
           github={'https://github.com/braxtonlemmon/odin-facebook'}
-          live={'https://murmuring-wave-95625.herokuapp.com/'} 
+          live={'https://murmuring-wave-95625.herokuapp.com/'}
           isLive
         />
         <Project 
+          id={1}
           img={'chess.png'}
           github={'https://github.com/braxtonlemmon/chess'}  
         />
-        <Project 
+        <Project
+          id={2}
           img={'pomodoro.gif'}
           github={'https://github.com/braxtonlemmon/pomodoro'}
           live={'https://braxtonlemmon.github.io/pomodoro/'}
           isLive
         />
-        <Project 
+        <Project
+          id={3} 
           img={'weather.png'}
           github={'https://github.com/braxtonlemmon/weather-app'}
           live={'https://braxtonlemmon.github.io/weather-app/'}
           isLive
         />
         <Project
+          id={4}
+          img={'pitchfork.png'}
+          github={'https://github.com/braxtonlemmon/pitchfork-clone'}
+          live={'https://braxtonlemmon.github.io/pitchfork-clone/'}
+          isLive
+        />
+        <Project
+          id={5}
           img={'pitchfork.png'}
           github={'https://github.com/braxtonlemmon/pitchfork-clone'}
           live={'https://braxtonlemmon.github.io/pitchfork-clone/'}

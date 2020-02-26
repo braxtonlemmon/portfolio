@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { H1 } from './shared/Headings.js';
 import { Responsive } from 'responsive-react';
-import Footer from './Footer.js';
-import NavButton from './NavButton.js';
+import NavButton from './shared/NavButton.js';
 
 const HeaderBar = styled.header`
   width: 100%;

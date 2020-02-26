@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import NavButton from './NavButton.js';
+import NavButton from './shared/NavButton.js';
 
 const Nav = styled.footer`
   display: grid;
