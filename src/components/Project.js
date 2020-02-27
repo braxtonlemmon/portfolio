@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import CardInfo from './CardInfo.js';
 
+
 const Card = styled.div`
   position: relative;
   height: 400px;
@@ -9,6 +10,7 @@ const Card = styled.div`
   border: 2px solid black;
   justify-self: center;
   display: grid;
+  box-shadow: 4px 5px 3px #979797;
   grid-template-rows: 1fr 50px;
   &:after {
     content: '';
@@ -74,26 +76,26 @@ class Project extends Component {
   render() {
     const card = this.props.card;
     return (
-      <Card
-        onMouseEnter={this.handleMouseEnter}
-        onMouseLeave={this.handleMouseLeave}
-        onClick={this.handleClick}
-        imgUrl={process.env.PUBLIC_URL + `${card.img}`}
-        imgXY={{x: card.x, y: card.y}}
-      >
-        {this.state.isHovered && <CardInfo info={card.info} />}
-        <Buttons>
-          <Button
-            href={card.github}
-            target="_blank"
-          >GITHUB</Button>
-          {card.isLive &&
+        <Card
+          onMouseEnter={this.handleMouseEnter}
+          onMouseLeave={this.handleMouseLeave}
+          onClick={this.handleClick}
+          imgUrl={process.env.PUBLIC_URL + `${card.img}`}
+          imgXY={{x: card.x, y: card.y}}
+        >
+          {this.state.isHovered && <CardInfo info={card.info} />}
+          <Buttons>
             <Button
-              href={card.live}
+              href={card.github}
               target="_blank"
-            >LIVE</Button>}
-        </Buttons>
-      </Card>
+            >GITHUB</Button>
+            {card.isLive &&
+              <Button
+                href={card.live}
+                target="_blank"
+              >LIVE</Button>}
+          </Buttons>
+        </Card>
     )
   }
 }

@@ -17,9 +17,9 @@ const Intro = styled(H2)`
 
 const Projects = styled.div`
   display: grid;
-  margin-bottom: 50px;
+  margin: 20px 0 50px 0;
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 20px;
 
   @media only screen and (min-width: 41em) {
     grid-template-columns: 1fr 1fr;
@@ -40,7 +40,7 @@ function Home() {
     <Wrapper>
       <Intro>Braxton Lemmon</Intro>
       <Crossword />
-      <H2>Projects</H2>
+      <H2>Work</H2>
       <Projects>
         {projects}
       </Projects>

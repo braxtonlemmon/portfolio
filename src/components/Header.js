@@ -9,7 +9,6 @@ const HeaderBar = styled.header`
   margin-bottom: 15px;
   padding: 10px;
   background: #303030;
-
   display: flex;
   justify-content: space-between;
 `;
