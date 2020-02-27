@@ -7,6 +7,7 @@ const Card = styled.div`
   height: 400px;
   width: 300px;
   border: 2px solid black;
+  justify-self: center;
   display: grid;
   grid-template-rows: 1fr 50px;
   &:after {
