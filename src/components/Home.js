@@ -3,11 +3,16 @@ import styled from "styled-components";
 import Project from "./Project.js";
 import CARDS from '../CARDS.js';
 import { H2 } from './shared/Headings.js';
+import Crossword from './Crossword.js';
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 const Intro = styled(H2)`
-
   padding: 10px;
-  margin: 15px 0;
+
 `;
 
 const Projects = styled.div`
@@ -32,13 +37,14 @@ function Home() {
   CARDS.forEach(card => projects.push(<Project card={card} key={card.id} />));
 
   return (
-    <div>
+    <Wrapper>
       <Intro>Braxton Lemmon</Intro>
-      <Intro>open-minded web development</Intro>
+      <Crossword />
+      <H2>Projects</H2>
       <Projects>
         {projects}
       </Projects>
-    </div>
+    </Wrapper>
   );
 }
 
