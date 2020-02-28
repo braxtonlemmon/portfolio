@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Reset } from "styled-reset";
 import GlobalStyle from './GlobalStyle.js';

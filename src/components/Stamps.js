@@ -21,14 +21,18 @@ import mySvg from "../assets/Ableton.svg";
 import gimpIcon from '@iconify/icons-cib/gimp';
 
 const StampWrapper = styled.div`
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 10px; */
   @media (min-width: 37em) {
-    grid-template-columns: repeat(3, 1fr)
+    /* grid-template-columns: repeat(3, 1fr) */
   }
   @media (min-width: 62em) {
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
   }
 `;
 
@@ -37,7 +41,8 @@ const Stamp = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 5px;
+  /* margin: 5px; */
+  margin: 10px;
   border: 4px dotted black;
   padding: 5px;
   border-radius: 20px;

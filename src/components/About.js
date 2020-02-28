@@ -22,7 +22,22 @@ const AboutBox = styled.div`
   justify-content: center;
   align-items: center;
   margin: 15px 0;
+  background: #e1e1e1;
+  padding: 10px;
+  box-shadow: 5px 5px 3px grey, -5px 5px 3px grey;
 `
+const TechnologyBox = styled(AboutBox)`
+  width: 90%;
+  @media only screen and (min-width: 43em) {
+    width: 80%;
+  }
+  /* @media only screen and (min-width: 64em) {
+    width: 70%;
+  } */
+  @media only screen and (min-width: 86em) {
+    width: 70%;
+  }
+`;
 
 const About = () => {
   useEffect(() => {
@@ -36,10 +51,10 @@ const About = () => {
         <H3>Bio</H3>
         <Bio />
       </AboutBox>
-      <AboutBox>
+      <TechnologyBox>
         <H3>Technologies</H3>
         <Stamps />
-      </AboutBox>
+      </TechnologyBox>
       <AboutBox>
         <H3>Hobbies</H3>
         <Hobbies />

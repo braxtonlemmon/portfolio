@@ -8,10 +8,10 @@ const Card = styled.div`
   margin: 10px;
   height: 400px;
   width: 300px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   justify-self: center;
   display: grid;
-  box-shadow: 4px 5px 3px #979797;
+  box-shadow: 3px 5px 3px #979797, -3px 5px 3px #979797;
   grid-template-rows: 1fr 50px;
   &:after {
     content: '';

@@ -32,7 +32,7 @@ const CardInfo = (props) => {
   const list = []
   info.technologies.forEach(tech => {
     list.push(
-      <li>{tech}</li>
+      <li key={tech}>{tech}</li>
     )
   })
 
