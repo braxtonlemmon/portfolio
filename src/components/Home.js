@@ -1,7 +1,7 @@
 import React, { useEffect }from "react";
 import styled from "styled-components";
 import Project from "./Project.js";
-import CARDS from '../CARDS.js';
+import CARDS from '../data/CARDS.js';
 import { H2 } from './shared/Headings.js';
 import Crossword from './Crossword.js';
 
@@ -15,34 +15,39 @@ const Wrapper = styled.div`
 
 `
 const Intro = styled(H2)`
-  align-self: flex-end;
+  align-self: center;
   font-size: 3em;
 `;
 
 const Projects = styled.div`
-  display: grid;
+  /* display: grid; */
   margin: 12px 0;
-  grid-template-columns: 1fr;
-  gap: 30px;
+  /* grid-template-columns: 1fr; */
+  /* gap: 30px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-  @media only screen and (min-width: 43em) {
-    grid-template-columns: 1fr 1fr;
-  }
-  @media only screen and (min-width: 64em) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  @media only screen and (min-width: 86em) {
-    grid-template-columns: repeat(4, auto);
-  }
+
 `;
 
 const Work = styled.div`
   /* border: 1px solid grey; */
-  padding: 20px;
+  width: 85%;
+  padding: 10px;
   background: #e1e1e1;
   box-shadow: 5px 5px 3px grey, -5px 5px 3px grey;
   z-index: 1; 
   margin-bottom: 20px;
+  @media only screen and (min-width: 43em) {
+    width: 90%;
+  }
+  @media only screen and (min-width: 64em) {
+    width: 80%;
+  }
+  @media only screen and (min-width: 86em) {
+    width: 75%;
+  }
 `
 
 function Home() {

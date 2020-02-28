@@ -6,11 +6,15 @@ import Bio from './Bio.js';
 import Hobbies from './Hobbies.js';
 
 const AboutWrapper = styled.div`
-  margin: 100px 50px 10px 50px;
+  margin: 10px 50px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  @media only screen and (min-width: 43em) {
+    margin-top: 100px;
+  }
+
 `
 const AboutBox = styled.div`
   display: flex;

@@ -51,7 +51,6 @@ class Main extends Component {
   }
 
   render() {
-    console.log(this.props.id);
     return (
       <Content class={this.state.class}>
         {this.props.id === 1 && <Home />}

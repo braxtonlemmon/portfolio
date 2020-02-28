@@ -17,7 +17,7 @@ import eslinticon from "@iconify/icons-mdi/eslint";
 import prettierIcon from "@iconify/icons-cib/prettier";
 import rubyIcon from "@iconify/icons-cib/ruby";
 import postgresqlIcon from "@iconify/icons-cib/postgresql";
-import mySvg from "../Ableton.svg";
+import mySvg from "../assets/Ableton.svg";
 import gimpIcon from '@iconify/icons-cib/gimp';
 
 const StampWrapper = styled.div`

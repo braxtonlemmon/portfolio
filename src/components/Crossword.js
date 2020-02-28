@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { letters, develop } from '../CrosswordData.js';
+import { letters, develop } from '../data/CrosswordData.js';
 
 const CrosswordContainer = styled.div`
   display: grid;

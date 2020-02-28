@@ -26,10 +26,11 @@ const RelativeWrapper = styled.div`
 
 function Music() {
   return (
-    <RelativeWrapper>
-      <H2>Music Production</H2>
-      <AbsolutePlayer />
-    </RelativeWrapper>
+    <H2>Music</H2>
+    // <RelativeWrapper>
+    //   <H2>Music Production</H2>
+    //   {/* <AbsolutePlayer /> */}
+    // </RelativeWrapper>
   )
 }
 

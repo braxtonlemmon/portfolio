@@ -27,7 +27,11 @@ const ContactWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+
+  @media only screen and (min-width: 43em) {
+    margin-top: 100px;
+  }
+
 `
 
 const ContactSection = styled.div`

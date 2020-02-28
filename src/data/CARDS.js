@@ -65,7 +65,7 @@ const CARDS = [
     },
   },
   { id: 5, 
-    img: 'pitchfork.png',
+    img: 'pitchfork.gif',
     github: 'https://github.com/braxtonlemmon/pitchfork-clone',
     live: 'https://braxtonlemmon.github.io/pitchfork-clone/',
     isLive: true,

@@ -5,6 +5,7 @@ import CardInfo from './CardInfo.js';
 
 const Card = styled.div`
   position: relative;
+  margin: 10px;
   height: 400px;
   width: 300px;
   border: 2px solid black;
