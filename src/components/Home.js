@@ -60,7 +60,7 @@ const Home = () => {
 
   return (
     <Wrapper>
-      <Intro>Braxton Lemmon</Intro>
+      {/* <Intro>Braxton Lemmon</Intro> */}
       <Crossword />
       <Work>
         <H2>Work</H2>

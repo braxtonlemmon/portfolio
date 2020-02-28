@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { H1 } from './shared/Headings.js';
+import { H1, H2 } from './shared/Headings.js';
 import { Responsive } from 'responsive-react';
 import NavButton from './shared/NavButton.js';
 
@@ -12,6 +12,7 @@ const HeaderBar = styled.header`
   display: flex;
   justify-content: space-between;
   z-index: 88;
+  color: white;
   @media only screen and (min-width: 43em) {
     position: fixed;
   }
@@ -35,7 +36,9 @@ const Header = (props) => {
   return (
     <HeaderBar>
       <Logo>BL</Logo>
+
       <Responsive displayIn={["Tablet", "Laptop"]}>
+        <H2>Braxton Lemmon</H2>
         <TopNav>
           <NavButton top id={1} onClick={handleClick}>
             Home
