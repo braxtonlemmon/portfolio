@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect }from "react";
 import styled from "styled-components";
 import Project from "./Project.js";
 import CARDS from '../CARDS.js';
@@ -48,6 +48,10 @@ const Work = styled.div`
 function Home() {
   const projects = [];
   CARDS.forEach(card => projects.push(<Project card={card} key={card.id} />));
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <Wrapper>

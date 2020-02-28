@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { H2, H3 } from './shared/Headings.js';
 import Stamps from './Stamps.js';
@@ -20,26 +20,28 @@ const AboutBox = styled.div`
   margin: 15px 0;
 `
 
-class About extends Component {
-  render() {
-    return (
-      <AboutWrapper>
-        <H2>About</H2>
-        <AboutBox>
-          <H3>Bio</H3>
-          <Bio />
-        </AboutBox>
-        <AboutBox>
-          <H3>Technologies</H3>
-          <Stamps />
-        </AboutBox>
-        <AboutBox>
-          <H3>Hobbies</H3>
-          <Hobbies />
-        </AboutBox>
-      </AboutWrapper>
-    );
-  }
+function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  
+  return (
+    <AboutWrapper>
+      <H2>About</H2>
+      <AboutBox>
+        <H3>Bio</H3>
+        <Bio />
+      </AboutBox>
+      <AboutBox>
+        <H3>Technologies</H3>
+        <Stamps />
+      </AboutBox>
+      <AboutBox>
+        <H3>Hobbies</H3>
+        <Hobbies />
+      </AboutBox>
+    </AboutWrapper>
+  );
 }
 
 export default About;
