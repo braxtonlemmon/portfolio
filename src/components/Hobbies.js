@@ -14,7 +14,7 @@ const hobbyList = [
 const generateHobbies = () => {
   return hobbyList.map(hobby => {
     return (
-      <Hobby key={hobby} imgUrl={process.env.PUBLIC_URL + `${hobby.img}`}>
+      <Hobby key={hobby} imgUrl={process.env.PUBLIC_URL + `img/${hobby.img}`}>
         {hobby.name}
       </Hobby>
     )
