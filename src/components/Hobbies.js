@@ -13,6 +13,8 @@ const Hobby = styled.span`
     background-size: cover;
     background-position: center;
     color: transparent;
+    /* border: none; */
+    transform: scale(1.5);
   }
 `;
 
