@@ -7,8 +7,7 @@ const BioBox = styled.p`
 
 const bioText = `
 My name is Braxton Lemmon. 
-I received a Bachelor of Science in Recreation Management in 2014.
-I've been a student of The Odin Project Full Stack curriculum since 2018.
+I received a Bachelor of Science in Recreation Management in 2014. After graduating I spent time working as a therapist and as an English teacher. In 2018 I became a student of The Odin Project Full Stack curriculum.
 `
 const Bio = () => {
   return (

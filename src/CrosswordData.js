@@ -1,4 +1,4 @@
-const Letters = {
+const letters = {
   3: '',
   14: '',
   16: '',
@@ -24,7 +24,6 @@ const Letters = {
   74: '',
   83: '',
   86: '',
-  87: '',
   88: '',
   89: '',
   90: '',
@@ -33,7 +32,7 @@ const Letters = {
   93: '',
   94: '',
   99: '',
-  15: 'D',
+  15: 'D', 
   27: 'E',
   39: 'V',
   51: 'E',
@@ -58,4 +57,6 @@ const Letters = {
   82: 'E',
 }
 
-export default Letters;
+const develop = [15, 27, 39, 51, 63, 75, 87];
+
+export { letters, develop};

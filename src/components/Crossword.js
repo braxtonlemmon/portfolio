@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Letters from '../CrosswordData.js';
+import { letters, develop } from '../CrosswordData.js';
 
 const CrosswordContainer = styled.div`
   display: grid;
@@ -10,7 +10,7 @@ const CrosswordContainer = styled.div`
   justify-self: center;
   margin: 20px 0;
   padding-bottom: 30px;
-  border-bottom: 1px solid black;
+k;
     
   @media only screen and (min-width: 41em) {
     grid-template-columns: repeat(12, 2.5em);
@@ -38,13 +38,29 @@ const Tile = styled.div`
     }
   }};
   /* border: 1px dotted black; */
-  color: white;
+  color: ${props => props.develop ? '#e0ff5d' : 'white'};
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.3em;
+  &:hover {
+    transform: ${props => props.letter ? 'rotate(10deg)' : 'none'};
+    /* animation: rotation 3s infinite linear;
+  }
+  @keyframes rotation {
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  } */
+}
+
+  
+
 
   @media only screen and (min-width: 41em) {
     font-size: 1.8em;
@@ -60,10 +76,17 @@ const Tile = styled.div`
 const generateTiles = () => {
   let tiles = [];
   for(let i = 0; i < 108; i++) {
-    if (Letters[i] !== undefined) {
+    if (letters[i] !== undefined) {
       tiles.push(
-        Letters[i].length === 1 ?
-        <Tile key={i} letter>{Letters[i]}</Tile> :
+        letters[i].length === 1 ?
+          (develop.includes(i) ? 
+          <Tile key={i} letter develop>{letters[i]}</Tile>:
+          <Tile key={i} letter>{letters[i]}</Tile> 
+          )
+
+        
+        
+        :
         <Tile key={i} accent></Tile> 
       )
     }
@@ -73,11 +96,11 @@ const generateTiles = () => {
 
 
 
-      // if (Letters[i] !== undefined) {
-      //   return Letters[i] === '' ? <Tile key={i} accent /> : <Tile key={i} letter>{Letters[i]}</Tile>
+      // if (letters[i] !== undefined) {
+      //   return letters[i] === '' ? <Tile key={i} accent /> : <Tile key={i} letter>{letters[i]}</Tile>
       // }
-      // Letters[i] ? 
-      // <Tile key={i} letter>{Letters[i]}</Tile> :
+      // letters[i] ? 
+      // <Tile key={i} letter>{letters[i]}</Tile> :
       // <Tile key={i} />
 
   }

@@ -35,14 +35,15 @@ const Buttons = styled.div`
   grid-auto-flow: column;
   gap: 15px;
   grid-row: 2 / span 1;
-  margin: 10px auto;
+  margin: 0 auto 20px auto;
 
 `;
 
 const Button = styled.a`
   border-radius: 5px;
   border: 2px solid black;
-  height: 30px;
+  height: 35px;
+  width: 85px;
   background: red;
   color: white;
   text-decoration: none;

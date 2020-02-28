@@ -4,6 +4,7 @@ import { H1 } from './shared/Headings.js';
 import { Responsive } from 'responsive-react';
 import NavButton from './shared/NavButton.js';
 
+
 const HeaderBar = styled.header`
   width: 100%;
   margin-bottom: 15px;
@@ -11,6 +12,11 @@ const HeaderBar = styled.header`
   background: #303030;
   display: flex;
   justify-content: space-between;
+  z-index: 88;
+  @media only screen and (min-width: 43em) {
+    position: fixed;
+  }
+
 `;
 
 const Logo = styled(H1)`

@@ -14,6 +14,7 @@ const Nav = styled.footer`
   padding: 2px 0;
   border-right: 2px solid black;
   border-left: 2px solid black;
+  z-index: 50;
 `;
 
 class Footer extends Component {
