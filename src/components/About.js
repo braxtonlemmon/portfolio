@@ -24,7 +24,7 @@ const AboutBox = styled.div`
   margin: 15px 0;
 `
 
-function About() {
+const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])

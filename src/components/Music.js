@@ -24,7 +24,7 @@ const RelativeWrapper = styled.div`
 
 
 
-function Music() {
+const Music = () => {
   return (
     <H2>Music</H2>
     // <RelativeWrapper>

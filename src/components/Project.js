@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState} from 'react';
 import styled from 'styled-components';
 import CardInfo from './CardInfo.js';
 
@@ -56,49 +56,39 @@ const Button = styled.a`
     background: pink;
   }
 `
-
-class Project extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isHovered: false
-    }
-    this.handleMouseEnter = this.handleMouseEnter.bind(this);
-    this.handleMouseLeave = this.handleMouseLeave.bind(this);
-  }
+const Project = (props) => {
+  const [isHovered, setIsHovered] = useState(false);
   
-  handleMouseEnter() {
-    this.setState({isHovered: true});
+  const handleMouseEnter = () => {
+    setIsHovered(true);
   }
 
-  handleMouseLeave() {
-    this.setState({isHovered: false});
+  const handleMouseLeave = () => {
+    setIsHovered(false);
   }
 
-  render() {
-    const card = this.props.card;
-    return (
-        <Card
-          onMouseEnter={this.handleMouseEnter}
-          onMouseLeave={this.handleMouseLeave}
-          onClick={this.handleClick}
-          imgUrl={process.env.PUBLIC_URL + `gif/${card.img}`}
-          imgXY={{x: card.x, y: card.y}}
-        >
-          {this.state.isHovered && <CardInfo info={card.info} />}
-          <Buttons>
-            <Button
-              href={card.github}
-              target="_blank"
-            >GITHUB</Button>
-            {card.isLive &&
-              <Button
-                href={card.live}
-                target="_blank"
-              >LIVE</Button>}
-          </Buttons>
-        </Card>
-    )
-  }
+  const card = props.card;
+
+  return (
+    <Card
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      imgUrl={process.env.PUBLIC_URL + `gif/${card.img}`}
+      imgXY={{ x: card.x, y: card.y }}
+    >
+      {isHovered && <CardInfo info={card.info} />}
+      <Buttons>
+        <Button href={card.github} target="_blank">
+          GITHUB
+        </Button>
+        {card.isLive && (
+          <Button href={card.live} target="_blank">
+            LIVE
+          </Button>
+        )}
+      </Buttons>
+    </Card>
+  );
 }
+
 export default Project;

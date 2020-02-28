@@ -8,9 +8,9 @@ const hobbyList = [
   { name: 'camping',       img: 'camping.jpeg' },
   { name: 'homebrewing',   img: 'brewing.jpg' },
   { name: 'reading',       img: 'reading.webp' },
-  { name: 'board games',   img: 'boardgames.jpg' },
-  
+  { name: 'board games',   img: 'boardgames.jpg' },  
 ]
+
 const generateHobbies = () => {
   return hobbyList.map(hobby => {
     return (

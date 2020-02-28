@@ -50,7 +50,7 @@ const Work = styled.div`
   }
 `
 
-function Home() {
+const Home = () => {
   const projects = [];
   CARDS.forEach(card => projects.push(<Project card={card} key={card.id} />));
 

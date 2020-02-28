@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 import NavButton from './shared/NavButton.js';
 
@@ -17,40 +17,29 @@ const Nav = styled.footer`
   z-index: 50;
 `;
 
-class Footer extends Component {
-  constructor(props) {
-    super(props)
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(e) {
+const Footer = (props) => {
+  const handleClick = (e) => {
     const id = parseInt(e.target.id);
-    this.props.changeId(id);
-    this.props.doAnimate();
+    props.changeId(id);
+    props.doAnimate();
   }
 
-  render() {
-    return (
-      <Nav>
-        <NavButton 
-          id={1}
-          onClick={this.handleClick}
-        >Home</NavButton>
-        <NavButton 
-          id={2}
-          onClick={this.handleClick}
-        >Music</NavButton>
-        <NavButton 
-          id={3}
-          onClick={this.handleClick}
-        >About</NavButton>
-        <NavButton 
-          id={4}
-          onClick={this.handleClick}
-        >Contact</NavButton>
-      </Nav>
-    );
-  }
+  return (
+    <Nav>
+      <NavButton id={1} onClick={handleClick}>
+        Home
+      </NavButton>
+      <NavButton id={2} onClick={handleClick}>
+        Music
+      </NavButton>
+      <NavButton id={3} onClick={handleClick}>
+        About
+      </NavButton>
+      <NavButton id={4} onClick={handleClick}>
+        Contact
+      </NavButton>
+    </Nav>
+  );
 }
 
 export default Footer;
