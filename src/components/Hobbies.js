@@ -14,7 +14,7 @@ const Hobby = styled.span`
     background-position: center;
     color: transparent;
     /* border: none; */
-    transform: scale(1.5);
+    transform: scale(1.1 );
   }
 `;
 

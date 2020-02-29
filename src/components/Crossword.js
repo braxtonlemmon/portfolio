@@ -10,7 +10,7 @@ const CrosswordContainer = styled.div`
   justify-self: center;
   margin: 20px 0;
   padding-bottom: 30px;
-k;
+
     
   @media only screen and (min-width: 41em) {
     grid-template-columns: repeat(12, 2.5em);
@@ -24,7 +24,7 @@ k;
     grid-template-columns: repeat(12, 3.2em);
     grid-template-rows: repeat(9, 3.2em);
   }
-`
+`;
 
 const Tile = styled.div`
   background: ${props => props.letter ? 'black' : '#ebebeb'};
@@ -47,6 +47,9 @@ const Tile = styled.div`
   font-size: 1.3em;
   &:hover {
     transform: ${props => props.letter ? 'rotate(10deg)' : 'none'};
+    background: ${props => {
+      if (props.accent) return 'green';
+    }}
     /* animation: rotation 3s infinite linear;
   }
   @keyframes rotation {
@@ -83,9 +86,6 @@ const generateTiles = () => {
           <Tile key={i} letter develop>{letters[i]}</Tile>:
           <Tile key={i} letter>{letters[i]}</Tile> 
           )
-
-        
-        
         :
         <Tile key={i} accent></Tile> 
       )
@@ -109,6 +109,8 @@ const generateTiles = () => {
 
 
 const Crossword = () => {
+  
+  
   return (
     <CrosswordContainer>
       {generateTiles()}

@@ -90,18 +90,18 @@ const Stamps = () => {
         <FaNpm size={size} />
         <Label>npm</Label>
       </Stamp>
-      <Stamp>
+      {/* <Stamp>
         <Icon icon={webpackIcon} height={size} color="black" />
         <Label>webpack</Label>
-      </Stamp>
-      <Stamp>
+      </Stamp> */}
+      {/* <Stamp>
         <Icon icon={eslinticon} height={size} color="black" />
         <Label>ESLint</Label>
       </Stamp>
       <Stamp>
         <Icon icon={prettierIcon} height={size} />
         <Label>Prettier</Label>
-      </Stamp>
+      </Stamp> */}
       <Stamp>
         <Icon icon={rubyIcon} height={size} />
         <Label>Ruby</Label>
@@ -110,10 +110,10 @@ const Stamps = () => {
         <Icon icon={languageRubyOnRails} height={size} color="black" />
         <Label>Ruby on Rails</Label>
       </Stamp>
-      <Stamp>
+      {/* <Stamp>
         <Icon icon={postgresqlIcon} height={size} />
         <Label>PostgreSQL</Label>
-      </Stamp>
+      </Stamp> */}
       <Stamp>
         <FaGitAlt size={size} />
         <Label>Git</Label>
