@@ -21,7 +21,7 @@ const Nav = styled.footer`
 const Footer = () => {
   return (
     <Nav>
-      <Link to="/home">
+      <Link to="/">
         <NavButton>Home</NavButton>
       </Link>
       <Link to="/music">

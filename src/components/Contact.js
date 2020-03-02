@@ -21,24 +21,20 @@ const Icon = styled.a`
   &:focus {
     color: black;
   }
+`;
 
-`
 const ContactWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  @media only screen and (min-width: 43em) {
-    margin-top: 100px;
-  }
-`
+`;
 
 const ContactSection = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px;
-`
+`;
 
 const Contact = () => {
   return (

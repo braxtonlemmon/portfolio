@@ -4,9 +4,6 @@ import styled from 'styled-components';
 import { H2 } from './shared/Headings.js';
 
 const Wrapper = styled.div`
-  @media only screen and (min-width: 43em) {
-    margin-top: 100px;
-  }
 `;
 // const Player = () => (
 //   <ReactPlayer

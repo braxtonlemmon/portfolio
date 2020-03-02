@@ -9,30 +9,16 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media only screen and (min-width: 43em) {
-    margin-top: 100px;
-  }
-
-`
-const Intro = styled(H2)`
-  align-self: center;
-  font-size: 3em;
 `;
 
 const Projects = styled.div`
-  /* display: grid; */
   margin: 12px 0;
-  /* grid-template-columns: 1fr; */
-  /* gap: 30px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-
 `;
 
 const Work = styled.div`
-  /* border: 1px solid grey; */
   width: 85%;
   padding: 10px;
   background: #e1e1e1;
@@ -48,19 +34,21 @@ const Work = styled.div`
   @media only screen and (min-width: 86em) {
     width: 75%;
   }
-`
+`;
 
 const Home = () => {
   const projects = [];
   CARDS.forEach(card => projects.push(<Project card={card} key={card.id} />));
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }, []);
 
   return (
     <Wrapper>
-      {/* <Intro>Braxton Lemmon</Intro> */}
       <Crossword />
       <Work>
         <H2>Work</H2>

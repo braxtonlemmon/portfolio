@@ -31,7 +31,7 @@ const HobbiesBox = styled.div`
 const generateHobbies = () => {
   return hobbyList.map(hobby => {
     return (
-      <Hobby key={hobby} imgUrl={process.env.PUBLIC_URL + `img/${hobby.img}`}>
+      <Hobby key={hobby.name} imgUrl={process.env.PUBLIC_URL + `img/${hobby.img}`}>
         {hobby.name}
       </Hobby>
     )

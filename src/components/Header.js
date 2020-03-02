@@ -35,7 +35,7 @@ const Header = () => {
       <Responsive displayIn={["Tablet", "Laptop"]}>
         <H2>Braxton Lemmon</H2>
         <TopNav>
-          <Link to="/home">
+          <Link to="/">
             <NavButton top>Home</NavButton>
           </Link>
           <Link to="/music">

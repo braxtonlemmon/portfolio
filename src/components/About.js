@@ -11,11 +11,8 @@ const AboutWrapper = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  @media only screen and (min-width: 43em) {
-    margin-top: 100px;
-  }
+`;
 
-`
 const AboutBox = styled.div`
   display: flex;
   flex-direction: column;
@@ -26,14 +23,12 @@ const AboutBox = styled.div`
   padding: 10px;
   box-shadow: 5px 5px 3px grey, -5px 5px 3px grey;
 `
+
 const TechnologyBox = styled(AboutBox)`
   width: 90%;
   @media only screen and (min-width: 43em) {
     width: 80%;
   }
-  /* @media only screen and (min-width: 64em) {
-    width: 70%;
-  } */
   @media only screen and (min-width: 86em) {
     width: 70%;
   }
@@ -41,8 +36,11 @@ const TechnologyBox = styled(AboutBox)`
 
 const About = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }, []);
   
   return (
     <AboutWrapper>

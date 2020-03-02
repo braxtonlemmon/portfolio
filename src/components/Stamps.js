@@ -24,16 +24,6 @@ const StampWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px; */
-  @media (min-width: 37em) {
-    /* grid-template-columns: repeat(3, 1fr) */
-  }
-  @media (min-width: 62em) {
-    /* grid-template-columns: repeat(4, 1fr); */
-  }
 `;
 
 const Stamp = styled.div`
@@ -41,7 +31,6 @@ const Stamp = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* margin: 5px; */
   margin: 10px;
   border: 4px dotted black;
   padding: 5px;
@@ -90,18 +79,18 @@ const Stamps = () => {
         <FaNpm size={size} />
         <Label>npm</Label>
       </Stamp>
-      {/* <Stamp>
+      <Stamp>
         <Icon icon={webpackIcon} height={size} color="black" />
         <Label>webpack</Label>
-      </Stamp> */}
-      {/* <Stamp>
+      </Stamp>
+      <Stamp>
         <Icon icon={eslinticon} height={size} color="black" />
         <Label>ESLint</Label>
       </Stamp>
       <Stamp>
         <Icon icon={prettierIcon} height={size} />
         <Label>Prettier</Label>
-      </Stamp> */}
+      </Stamp>
       <Stamp>
         <Icon icon={rubyIcon} height={size} />
         <Label>Ruby</Label>
@@ -110,10 +99,10 @@ const Stamps = () => {
         <Icon icon={languageRubyOnRails} height={size} color="black" />
         <Label>Ruby on Rails</Label>
       </Stamp>
-      {/* <Stamp>
+      <Stamp>
         <Icon icon={postgresqlIcon} height={size} />
         <Label>PostgreSQL</Label>
-      </Stamp> */}
+      </Stamp>
       <Stamp>
         <FaGitAlt size={size} />
         <Label>Git</Label>
