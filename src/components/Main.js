@@ -17,18 +17,10 @@ const Main = () => {
   return (
   <Content>
     <Switch>
-      <Route path='/home'>
-        <Home />
-      </Route>
-      <Route path='/music'>
-        <Music />
-      </Route>
-      <Route path='/about'>
-        <About />
-      </Route>
-      <Route path='/contact'>
-        <Contact />
-      </Route>
+      <Route path='/home' component={() => <Home />} />
+      <Route path='/music' component={() => <Music />} />
+      <Route path='/about' component={() => <About />} />
+      <Route path='/contact' component={() => <Contact />} />
     </Switch>
   </Content>
   );
