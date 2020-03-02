@@ -17,10 +17,10 @@ const Main = () => {
   return (
   <Content>
     <Switch>
-      <Route path='/home' component={() => <Home />} />
-      <Route path='/music' component={() => <Music />} />
-      <Route path='/about' component={() => <About />} />
-      <Route path='/contact' component={() => <Contact />} />
+      <Route path='/home' component={Home} />
+      <Route path='/music' component={Music} />
+      <Route path='/about' component={About} />
+      <Route path='/contact' component={Contact} />
     </Switch>
   </Content>
   );
