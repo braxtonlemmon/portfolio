@@ -57,6 +57,7 @@ const Button = styled.a`
   }
 `
 const Project = (props) => {
+  
   const [isHovered, setIsHovered] = useState(false);
   
   const handleMouseEnter = () => {

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { H1, H2 } from './shared/Headings.js';
 import { Responsive } from 'responsive-react';
 import NavButton from './shared/NavButton.js';
+import { Link } from 'react-router-dom';
 
 const HeaderBar = styled.header`
   width: 100%;
@@ -27,31 +28,25 @@ const TopNav = styled.div`
   display: flex;
 `
 
-const Header = (props) => {
-  const handleClick = (e) => {
-    const id = parseInt(e.target.id);
-    props.changeId(id);
-  }
-
+const Header = () => {
   return (
     <HeaderBar>
       <Logo>BL</Logo>
-
       <Responsive displayIn={["Tablet", "Laptop"]}>
         <H2>Braxton Lemmon</H2>
         <TopNav>
-          <NavButton top id={1} onClick={handleClick}>
-            Home
-          </NavButton>
-          <NavButton top id={2} onClick={handleClick}>
-            Music
-          </NavButton>
-          <NavButton top id={3} onClick={handleClick}>
-            About
-          </NavButton>
-          <NavButton top id={4} onClick={handleClick}>
-            Contact
-          </NavButton>
+          <Link to="/home">
+            <NavButton top>Home</NavButton>
+          </Link>
+          <Link to="/music">
+            <NavButton top>Music</NavButton>
+          </Link>
+          <Link to="/about">
+            <NavButton top>About</NavButton>
+          </Link>
+          <Link to="/contact">
+            <NavButton top>Contact</NavButton>
+          </Link>
         </TopNav>
       </Responsive>
     </HeaderBar>

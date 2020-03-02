@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import NavButton from './shared/NavButton.js';
+import { Link } from 'react-router-dom';
 
 const Nav = styled.footer`
   display: grid;
@@ -17,27 +18,21 @@ const Nav = styled.footer`
   z-index: 50;
 `;
 
-const Footer = (props) => {
-  const handleClick = (e) => {
-    const id = parseInt(e.target.id);
-    props.changeId(id);
-    props.doAnimate();
-  }
-
+const Footer = () => {
   return (
     <Nav>
-      <NavButton id={1} onClick={handleClick}>
-        Home
-      </NavButton>
-      <NavButton id={2} onClick={handleClick}>
-        Music
-      </NavButton>
-      <NavButton id={3} onClick={handleClick}>
-        About
-      </NavButton>
-      <NavButton id={4} onClick={handleClick}>
-        Contact
-      </NavButton>
+      <Link to="/home">
+        <NavButton>Home</NavButton>
+      </Link>
+      <Link to="/music">
+        <NavButton>Music</NavButton>
+      </Link>
+      <Link to="/about">
+        <NavButton>About</NavButton>
+      </Link>
+      <Link to="/contact">
+        <NavButton>Contact</NavButton>
+      </Link>
     </Nav>
   );
 }
