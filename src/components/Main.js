@@ -16,7 +16,7 @@ const Content = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  
+
   .fade-appear,
   .fade-enter {
     opacity: 0;
@@ -44,8 +44,12 @@ const Content = styled.div`
   section.route-section {
     position: absolute;
     width: 100%;
-    top: 100px;
+    top: 80px;
     left: 0;
+    margin-bottom: 50px;
+    @media only screen and (min-width: 43em) {
+      margin-bottom: 0;
+    }
   }
 `;
 
