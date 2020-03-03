@@ -14,19 +14,30 @@ import {
 
 const Icon = styled.a`
   text-decoration: none;
-  color: black;
+  color: #464646;
+  margin: 5px;
   &:hover {
     color: blue;
   }
   &:focus {
-    color: black;
+    color: #464646;
   }
 `;
 
+const Link = styled.a`
+  color: black;
+  text-decoration: none;
+  margin: 5px;
+  &:hover {
+    color: blue;
+  }
+`
 const ContactWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 1.3rem;
+
 `;
 
 const ContactSection = styled.div`
@@ -34,42 +45,46 @@ const ContactSection = styled.div`
   justify-content: center;
   align-items: center;
   margin: 10px;
+  padding: 10px;
+  background: #e1e1e1;
+  box-shadow: 5px 5px 3px grey, -5px 5px 3px grey;
 `;
 
 const Contact = () => {
+  const size = '2em';
   return (
     <ContactWrapper>
       <H2>Contact</H2>
-      <ContactSection>
+      {/* <ContactSection>
         <Icon href="https://wa.me/32493123308" target="_blank">
-          <FaWhatsapp size={"2em"} />
+          <FaWhatsapp size={size} />
         </Icon>
         <Icon href="tel:+32493123308" target="_blank">
-          <FaPhone size={"2em"} />
+          <FaPhone size={size} />
         </Icon>
-        <Icon href="tel:+32493123308" target="_blank">+32 493 12 33 08</Icon>
-      </ContactSection>
+        <Link href="tel:+32493123308" target="_blank">+32 493 12 33 08</Link>
+      </ContactSection> */}
       <ContactSection>
         <Icon href="mailto:braxtonlemmon@gmail.com" target="_blank">
-          <FiMail size={"2em"} />
+          <FiMail size={size} />
         </Icon>
-        <Icon href="mailto:braxtonlemmon@gmail.com" target="_blank">braxtonlemmon@gmail.com</Icon>
+        <Link href="mailto:braxtonlemmon@gmail.com" target="_blank">braxtonlemmon@gmail.com</Link>
       </ContactSection>
       <ContactSection>
         <Icon href="https://m.me/braxton.lemmon" target="_blank">
-          <FaFacebookMessenger size={"2em"} />
+          <FaFacebookMessenger size={size} />
         </Icon>
         <Icon href="https://twitter.com/braxtonlemmon" target="_blank">
-          <FaTwitter size={"2em"} />
+          <FaTwitter size={size} />
         </Icon>
         <Icon href="https://linkedin.com/in/braxtonlemmon/" target="_blank">
-          <FaLinkedinIn size={"2em"} />
+          <FaLinkedinIn size={size} />
         </Icon>
         <Icon href="https://github.com/braxtonlemmon" target="_blank">
-          <FaGithub size={"2em"} />
+          <FaGithub size={size} />
         </Icon>
         <Icon href="https://soundcloud.com/expiredmomentum" target="_blank">
-          <FaSoundcloud size={"2em"} />
+          <FaSoundcloud size={size} />
         </Icon>
       </ContactSection>
     </ContactWrapper>

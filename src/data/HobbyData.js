@@ -1,11 +1,11 @@
 const hobbyList = [
-  { name: "rock climbing", img: "climbing.jpeg" },
-  { name: "cooking", img: "cooking.png" },
-  { name: "making music", img: "makingmusic.jpg" },
-  { name: "camping", img: "camping.jpeg" },
-  { name: "homebrewing", img: "brewing.jpg" },
-  { name: "reading", img: "reading.webp" },
-  { name: "board games", img: "boardgames.jpg" }
+  { name: "rock climb", img: "climbing.jpeg" },
+  { name: "cook", img: "cooking.png" },
+  { name: "make music", img: "makingmusic.jpg" },
+  { name: "camp", img: "camping.jpeg" },
+  { name: "homebrew", img: "brewing.jpg" },
+  { name: "read", img: "reading.webp" },
+  { name: "play games", img: "boardgames.jpg" }
 ];
 
 export default hobbyList;

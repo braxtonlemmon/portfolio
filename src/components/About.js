@@ -54,7 +54,7 @@ const About = () => {
         <Stamps />
       </TechnologyBox>
       <AboutBox>
-        <H3>Hobbies</H3>
+        <H3>What I Do</H3>
         <Hobbies />
       </AboutBox>
     </AboutWrapper>
