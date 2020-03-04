@@ -19,8 +19,8 @@ const AboutBox = styled.div`
   justify-content: center;
   align-items: center;
   margin: 15px 0;
-  /* background: #e1e1e1; */
-  background: yellow;
+  background: #e1e1e1;
+  /* background: yellow; */
   padding: 10px;
   box-shadow: 5px 5px 3px grey, -5px 5px 3px grey;
 `
