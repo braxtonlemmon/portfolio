@@ -37,6 +37,15 @@ const Tile = styled.div`
       return 'none';
     }
   }};
+
+  border: ${props => {
+    if (props.accent) {
+      return '2px dotted black';
+    } else {
+      return 'none';
+    }
+  }};
+
   /* border: 1px dotted black; */
   color: ${props => props.develop ? '#e0ff5d' : 'white'};
   height: 100%;
@@ -50,16 +59,6 @@ const Tile = styled.div`
     background: ${props => {
       if (props.accent) return 'green';
     }}
-    /* animation: rotation 3s infinite linear;
-  }
-  @keyframes rotation {
-    50% {
-      transform: rotate(360deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  } */
 }
 
   

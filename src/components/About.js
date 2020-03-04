@@ -19,14 +19,14 @@ const AboutBox = styled.div`
   justify-content: center;
   align-items: center;
   margin: 15px 0;
-  background: #e1e1e1;
-  /* background: yellow; */
+  background: ${props => props.bio ? '#e1e1e1' : '#e1e1e1'};
   padding: 10px;
   box-shadow: 5px 5px 3px grey, -5px 5px 3px grey;
 `
 
 const TechnologyBox = styled(AboutBox)`
   width: 90%;
+  background: #e1e1e1;
   @media only screen and (min-width: 43em) {
     width: 80%;
   }
@@ -46,7 +46,7 @@ const About = () => {
   return (
     <AboutWrapper>
       <H2>About</H2>
-      <AboutBox>
+      <AboutBox bio>
         <H3>Bio</H3>
         <Bio />
       </AboutBox>

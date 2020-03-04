@@ -12,21 +12,25 @@ const CardInfoBox = styled.div`
   align-content: center;
   justify-content: center;
   padding: 20px;
-`
+`;
+
 const CardTitle = styled(H2)`
   background: rgb(222, 209, 175, 0.8);
   padding: 10px;
   border: none;
   border-radius: 10px;
 `;
+
 const CardAbout = styled.p`
   text-align: center;
-`
+`;
+
 const CardTechnologies = styled.ul`
   display: flex;
   align-items: center;
   flex-direction: column;
-`
+`;
+
 const CardInfo = (props) => {
   const info = props.info;
   const list = []
@@ -45,6 +49,6 @@ const CardInfo = (props) => {
       </CardTechnologies>
     </CardInfoBox>
   )
-}
+};
 
 export default CardInfo;

@@ -10,7 +10,6 @@ const NavButton = styled.button`
   font-size: 1.5em;
   outline: none;
   cursor: pointer;
-  box-sizing: 
   &:hover {
     background: ${props => props.top ? 'none' : 'pink'};
     color: ${props => props.top ? 'white' : 'black'};

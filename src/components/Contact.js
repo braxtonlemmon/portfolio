@@ -37,7 +37,6 @@ const ContactWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   font-size: 1.3rem;
-
 `;
 
 const ContactSection = styled.div`
@@ -49,6 +48,37 @@ const ContactSection = styled.div`
   background: #e1e1e1;
   box-shadow: 5px 5px 3px grey, -5px 5px 3px grey;
 `;
+const Banana = styled.img`
+  height: 10em;
+  width: 10em;
+`
+
+const BananaSection = styled.div`
+  width: 85%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: load_up 2s forwards;
+
+  @keyframes load_up {
+    from {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  } 
+
+  @media only screen and (min-width: 43em) {
+    width: 50%;
+  }
+
+`
 
 const Contact = () => {
   const size = '2em';
@@ -87,6 +117,12 @@ const Contact = () => {
           <FaSoundcloud size={size} />
         </Icon>
       </ContactSection>
+      <BananaSection>
+        <Banana
+          src={process.env.PUBLIC_URL + 'img/banana.png'}
+        />
+        <H2>Don&#39;t be a green banana, contact me!</H2>
+      </BananaSection>    
     </ContactWrapper>
   );
 }

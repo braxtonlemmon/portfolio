@@ -1,15 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import { H1, H2 } from './shared/Headings.js';
+import { H1 } from './shared/Headings.js';
 import { Responsive } from 'responsive-react';
 import NavButton from './shared/NavButton.js';
 import { Link } from 'react-router-dom';
 
 const HeaderBar = styled.header`
   width: 100%;
+  position: relative;
   margin-bottom: 15px;
   padding: 10px;
-  background: #303030;
+  background: #3d3d3d;
   display: flex;
   justify-content: space-between;
   z-index: 88;
@@ -19,21 +20,30 @@ const HeaderBar = styled.header`
   }
 `;
 
-const Logo = styled(H1)`
-  font-family: 'Bungee Shade', sans-serif;
-  color: #c9c9c9;
-`
+const MyName = styled(H1)`
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  color: white;
+  @media only screen and (max-width: 24em) {
+   font-size: 1.5em; 
+  }
+
+`;
 
 const TopNav = styled.div`
   display: flex;
-`
+`;
+
+const Lemon = styled.img`
+  height: 50px;
+
+`;
 
 const Header = () => {
   return (
     <HeaderBar>
-      <Logo>BL</Logo>
+      <Lemon src={process.env.PUBLIC_URL + 'img/lemon.png'} />
+      <MyName>Braxton Lemmon</MyName>
       <Responsive displayIn={["Tablet", "Laptop"]}>
-        <H2>Braxton Lemmon</H2>
         <TopNav>
           <Link to="/">
             <NavButton top>Home</NavButton>
