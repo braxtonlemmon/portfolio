@@ -48,6 +48,7 @@
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^2.5.0",
+    "imagemin-webpack": "^5.1.1",
     "prettier": "1.19.1",
     "react-social-icons": "^4.1.0"
   }
