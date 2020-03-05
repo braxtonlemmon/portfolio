@@ -11,12 +11,15 @@ const HeaderBar = styled.header`
   margin-bottom: 15px;
   padding: 10px;
   background: #3d3d3d;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 120px 1fr;
   z-index: 88;
   color: white;
   @media only screen and (min-width: 43em) {
     position: fixed;
+    grid-template-columns: 120px 2fr 1fr;
   }
 `;
 
@@ -31,6 +34,7 @@ const MyName = styled(H1)`
 
 const TopNav = styled.div`
   display: flex;
+  justify-content: flex-end;
 `;
 
 const Lemon = styled.img`
