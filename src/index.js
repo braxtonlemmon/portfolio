@@ -6,6 +6,13 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import "typeface-bungee-shade";
 import "typeface-acme"
 
+if (process.env.NODE_ENV === 'development') {
+  const whyDidYouRender = require('@welldone-software/why-did-you-render');
+  whyDidYouRender(React, {
+    trackAllPureComponents: true,
+  });
+}
+
 ReactDOM.render(
   <Router>
     <App />

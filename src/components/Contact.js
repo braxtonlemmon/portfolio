@@ -117,12 +117,12 @@ const Contact = () => {
           <FaSoundcloud size={size} />
         </Icon>
       </ContactSection>
-      <BananaSection>
+      {/* <BananaSection>
         <Banana
           src={process.env.PUBLIC_URL + 'img/banana.png'}
         />
         <H2>Don&#39;t be a green banana, contact me!</H2>
-      </BananaSection>    
+      </BananaSection>     */}
     </ContactWrapper>
   );
 }
