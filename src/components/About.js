@@ -22,6 +22,9 @@ const AboutBox = styled.div`
   background: ${props => props.bio ? '#e1e1e1' : '#e1e1e1'};
   padding: 10px;
   box-shadow: 5px 5px 3px grey, -5px 5px 3px grey;
+  @media only screen and (min-width: 43em) {
+    max-width: 50%;
+  }
 `
 
 const TechnologyBox = styled(AboutBox)`

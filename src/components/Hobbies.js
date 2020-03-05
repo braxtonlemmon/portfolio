@@ -17,13 +17,13 @@ const Hobby = styled.span`
   margin: 5px;
   border: 1px solid black;
   font-size: 1.3em;
-  background: pink;
+  background: #6464648f;
   &:hover {
     background: url(${props => props.imgUrl});
     background-size: cover;
     background-position: center;
     color: transparent;
-    transform: scale(1.1 );
+    transform: scale(1.1);
   }
 `;
 
