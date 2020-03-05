@@ -12,24 +12,14 @@ import "typeface-acme"
 //     trackAllPureComponents: true,
 //   });
 // }
-const loader = document.querySelector('.loader');
 
-const showLoader = () => loader.classList.remove('loader--hide');
-const hideLoader = () => loader.classList.add('loader--hide');
-
-setTimeout(() => 
 
 
   ReactDOM.render(
     <Router>
-      <App 
-        hideLoader={hideLoader}
-        showLoader={showLoader}
-      />
+      <App/>
     </Router>, 
-    document.getElementById("root")
-  )
-, 3000);
+    document.getElementById("root"));
 
 
 

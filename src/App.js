@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Reset } from "styled-reset";
 import GlobalStyle from './GlobalStyle.js';
@@ -16,9 +16,8 @@ const Wrapper = styled.div`
 `;
 
 
-const App = ({ hideLoader }) => {
-  useEffect(() => hideLoader(), []);
-  
+const App = () => {
+
   return (
     <React.Fragment>
       <Reset />
