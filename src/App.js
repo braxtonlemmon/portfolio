@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { Reset } from "styled-reset";
 import GlobalStyle from './GlobalStyle.js';
@@ -15,7 +15,10 @@ const Wrapper = styled.div`
   font-family: 'Acme', sans-serif;
 `;
 
-function App() {
+
+const App = ({ hideLoader }) => {
+  useEffect(() => hideLoader(), []);
+  
   return (
     <React.Fragment>
       <Reset />
