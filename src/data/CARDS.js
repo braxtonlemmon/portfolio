@@ -1,16 +1,16 @@
 const CARDS = [
   {
     id: 0,
-    img: "odinbook.gif",
-    github: "https://github.com/braxtonlemmon/odin-facebook",
-    live: "https://murmuring-wave-95625.herokuapp.com/",
+    img: "library.gif",
+    github: "https://github.com/braxtonlemmon/book-library-react",
+    live: "https://braxtonlemmon.github.io/book-library-react/",
     isLive: true,
-    x: 0,
+    x: "-10px",
     y: 0,
     info: {
-      title: "The Odin Book",
-      about: "Social networking project",
-      technologies: ["Ruby on Rails", "HTML", "CSS"]
+      title: "Book Library",
+      about: "Digital book library",
+      technologies: ["React", "HTML", "CSS"]
     }
   },
   {
@@ -24,7 +24,7 @@ const CARDS = [
     info: {
       title: "Chess",
       about: "Command line chess game",
-      technologies: ["Ruby"]
+      technologies: ["Ruby", "RSpec"]
     }
   },
   {
@@ -57,21 +57,21 @@ const CARDS = [
   },
   {
     id: 4,
-    img: "pomodoro.gif",
-    github: "https://github.com/braxtonlemmon/pitchfork-clone",
-    live: "https://braxtonlemmon.github.io/pitchfork-clone/",
+    img: "odinbook.gif",
+    github: "https://github.com/braxtonlemmon/the-campfire",
+    live: "https://murmuring-wave-95625.herokuapp.com/",
     isLive: true,
-    x: "-10px",
+    x: 0,
     y: 0,
     info: {
-      title: "Pitchfork Clone",
-      about: "Visual replication of pitchfork.com",
-      technologies: ["HTML", "CSS"]
+      title: "The Campfire",
+      about: "Social networking site",
+      technologies: ["Ruby on Rails", "HTML", "CSS"]
     }
   },
   {
     id: 5,
-    img: "pomodoro.gif",
+    img: "pitchfork.png",
     github: "https://github.com/braxtonlemmon/pitchfork-clone",
     live: "https://braxtonlemmon.github.io/pitchfork-clone/",
     isLive: true,

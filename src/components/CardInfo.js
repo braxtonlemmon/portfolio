@@ -10,25 +10,33 @@ const CardInfoBox = styled.div`
   gap: 10px;
   grid-auto-flow: row;
   align-content: center;
-  justify-content: center;
+  justify-items: center;
   padding: 20px;
 `;
 
 const CardTitle = styled(H2)`
   background: rgb(222, 209, 175, 0.8);
   padding: 10px;
-  border: none;
+  border: 2px solid black;
   border-radius: 10px;
 `;
 
 const CardAbout = styled.p`
   text-align: center;
+  background: #a0a0ffb0;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
 `;
 
 const CardTechnologies = styled.ul`
   display: flex;
   align-items: center;
   flex-direction: column;
+  background: #37bf42c4;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
 `;
 
 const CardInfo = (props) => {

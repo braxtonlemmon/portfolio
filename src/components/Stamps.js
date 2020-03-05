@@ -66,7 +66,6 @@ const Stamps = () => {
         <IoLogoJavascript size={size} />
         <Label>JavaScript</Label>
       </Stamp>
-
       <Stamp>
         <FaReact size={size} />
         <Label>React</Label>
@@ -75,7 +74,7 @@ const Stamps = () => {
         <Icon icon={jestIcon} height={size} />
         <Label>Jest</Label>
       </Stamp>
-      <Stamp>
+      {/* <Stamp>
         <FaNpm size={size} />
         <Label>npm</Label>
       </Stamp>
@@ -90,7 +89,7 @@ const Stamps = () => {
       <Stamp>
         <Icon icon={prettierIcon} height={size} />
         <Label>Prettier</Label>
-      </Stamp>
+      </Stamp> */}
       <Stamp>
         <Icon icon={rubyIcon} height={size} />
         <Label>Ruby</Label>

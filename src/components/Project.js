@@ -8,7 +8,6 @@ const Card = styled.div`
   margin: 10px;
   height: 400px;
   width: 300px;
-  /* border: 2px solid black; */
   justify-self: center;
   display: grid;
   box-shadow: 3px 5px 3px #979797, -3px 5px 3px #979797;
