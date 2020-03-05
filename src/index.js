@@ -1,9 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router } from 'react-router-dom';
-import "typeface-bungee-shade";
 import "typeface-acme"
 
 // if (process.env.NODE_ENV === 'development') {
@@ -21,7 +19,3 @@ import "typeface-acme"
     </Router>, 
     document.getElementById("root"));
 
-
-
-
-serviceWorker.unregister();
