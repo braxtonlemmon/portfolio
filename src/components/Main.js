@@ -3,7 +3,6 @@
 // https://github.com/Ihatetomatoes/react-router-page-transition-css/blob/master/02-End/src/App.css
 
 import React from "react";
-import styled from "styled-components";
 import Home from "./Home.js";
 import Music from "./Music.js";
 import About from "./About.js";

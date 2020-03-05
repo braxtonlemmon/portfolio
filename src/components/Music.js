@@ -17,6 +17,7 @@ const MusicContent = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
   @media only screen and (min-width: 86em) {
     flex-direction: row-reverse;
   }
@@ -27,6 +28,10 @@ const MusicPlayer = styled.div`
   margin-top: 30px;
   padding: 10px;
   font-size: 20px;
+  max-width: 300px;
+  @media only screen and (min-width: 41em) {
+    max-width: 30em;
+  }
 `;
 
 const Music = () => {

@@ -36,6 +36,7 @@ const Content = styled.div`
     top: 80px;
     left: 0;
     margin-bottom: 50px;
+    margin-top: 20px;
     @media only screen and (min-width: 43em) {
       margin-bottom: 0;
     }

@@ -14,10 +14,11 @@ const HeaderBar = styled.header`
   /* display: flex;
   justify-content: space-between; */
   display: grid;
-  grid-template-columns: 120px 1fr;
+  align-items: center;
+  grid-template-columns: 80px 1fr;
   z-index: 88;
   color: white;
-  @media only screen and (min-width: 43em) {
+  @media only screen and (min-width: 45em) {
     position: fixed;
     grid-template-columns: 120px 2fr 1fr;
   }
@@ -26,8 +27,8 @@ const HeaderBar = styled.header`
 const MyName = styled(H1)`
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   color: white;
-  @media only screen and (max-width: 24em) {
-   font-size: 1.5em; 
+  @media only screen and (max-width: 26em) {
+   font-size: 2em; 
   }
 
 `;

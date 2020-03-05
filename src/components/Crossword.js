@@ -5,13 +5,15 @@ import { letters, develop } from '../data/CrosswordData.js';
 const CrosswordContainer = styled.div`
   display: grid;
   gap: 2px;
-  grid-template-columns: repeat(12, 1.75em);
-  grid-template-rows: repeat(9, 1.75em);
+  grid-template-columns: repeat(12, 1.5em);
+  grid-template-rows: repeat(9, 1.5em);
   justify-self: center;
-  margin: 20px 0;
   padding-bottom: 30px;
 
-    
+  @media only screen and (min-width: 26em) {
+    grid-template-columns: repeat(12, 2.0em);
+    grid-template-rows: repeat(9, 2.0em);
+  }
   @media only screen and (min-width: 41em) {
     grid-template-columns: repeat(12, 2.5em);
     grid-template-rows: repeat(9, 2.5em);
@@ -46,7 +48,6 @@ const Tile = styled.div`
     }
   }};
 
-  /* border: 1px dotted black; */
   color: ${props => props.develop ? '#e0ff5d' : 'white'};
   height: 100%;
   width: 100%;
@@ -59,10 +60,7 @@ const Tile = styled.div`
     background: ${props => {
       if (props.accent) return 'green';
     }}
-}
-
-  
-
+  }
 
   @media only screen and (min-width: 41em) {
     font-size: 1.8em;
@@ -92,24 +90,11 @@ const generateTiles = () => {
     else {
       tiles.push(<Tile key={i} />)
     }
-
-
-
-      // if (letters[i] !== undefined) {
-      //   return letters[i] === '' ? <Tile key={i} accent /> : <Tile key={i} letter>{letters[i]}</Tile>
-      // }
-      // letters[i] ? 
-      // <Tile key={i} letter>{letters[i]}</Tile> :
-      // <Tile key={i} />
-
   }
   return tiles;
 }
 
-
 const Crossword = () => {
-  
-  
   return (
     <CrosswordContainer>
       {generateTiles()}
