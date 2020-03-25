@@ -1,6 +1,20 @@
 const CARDS = [
   {
     id: 0,
+    img: "battleship.gif",
+    github: "https://github.com/braxtonlemmon/battleship-react",
+    live: "https://braxtonlemmon.github.io/battleship-react/",
+    isLive: true,
+    x: "-45px",
+    y: 0,
+    info: {
+      title: "Battleship",
+      about: "Browser battleship game.",
+      technologies: ["React", "Jest", "HTML", "CSS"]
+    }
+  },
+  {
+    id: 1,
     img: "library.gif",
     github: "https://github.com/braxtonlemmon/book-library-react",
     live: "https://braxtonlemmon.github.io/book-library-react/",
@@ -14,7 +28,7 @@ const CARDS = [
     }
   },
   {
-    id: 1,
+    id: 2,
     img: "chess.gif",
     github: "https://github.com/braxtonlemmon/chess",
     live: "",
@@ -28,7 +42,7 @@ const CARDS = [
     }
   },
   {
-    id: 2,
+    id: 3,
     img: "pomodoro.gif",
     github: "https://github.com/braxtonlemmon/pomodoro",
     live: "https://braxtonlemmon.github.io/pomodoro/",
@@ -42,7 +56,7 @@ const CARDS = [
     }
   },
   {
-    id: 3,
+    id: 4,
     img: "weather.gif",
     github: "https://github.com/braxtonlemmon/weather-app",
     live: "https://braxtonlemmon.github.io/weather-app/",
@@ -56,7 +70,7 @@ const CARDS = [
     }
   },
   {
-    id: 4,
+    id: 5,
     img: "odinbook.gif",
     github: "https://github.com/braxtonlemmon/the-campfire",
     live: "https://murmuring-wave-95625.herokuapp.com/",
@@ -70,7 +84,7 @@ const CARDS = [
     }
   },
   {
-    id: 5,
+    id: 6,
     img: "pitchfork.png",
     github: "https://github.com/braxtonlemmon/pitchfork-clone",
     live: "https://braxtonlemmon.github.io/pitchfork-clone/",
