@@ -1,0 +1,248 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* My CSS */
+
+/* Universal */
+*, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 19px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  font-weight: bold;
+}
+h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* MAIN WRAPPERS */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  margin: 10px 10px 60px 10px;
+}
+.wrapper {
+  padding: 10px;
+  height: 3508px;
+  width: 2480px;
+  height: 842px;
+  width: 595px;
+  display: grid;
+  justify-content: center;
+  gap: 8px;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr 1.3fr 1fr 1.3fr 1.3fr;
+  grid-template-areas: 
+    "name      info"
+    "projects  projects"
+    "skills    skills"
+    "school    school"
+    "work      work"
+  ;
+}
+
+.wrapper >* {
+  padding: 5px;
+}
+
+/* NAME */
+.name {
+  grid-area: name;
+  background-color: rgba(255, 166, 0, 0.473);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-shadow: -2px 3px grey;
+  border-radius: 5px;
+}
+
+.name-first, .name-last {
+  font-size: 2rem;
+}
+
+.name-last {
+  align-self: center;
+}
+
+.name-title {
+  align-self: flex-end;
+  justify-self: baseline;
+}
+
+/* INFO */
+.info {
+  grid-area: info;
+  background: rgba(241, 213, 175, 0.479);
+  box-shadow: -2px 3px grey;
+  border-radius: 5px;
+  }
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.info-label {
+  font-weight: bold;
+}
+
+/* ALL MAIN SECTIONS */
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 5px 15px;
+  box-shadow: -2px 3px grey;
+  border-radius: 5px;
+}
+
+.content {
+  width: 100%;
+  margin-top: 5px;
+
+}
+
+/* PROJECTS */
+.projects {
+  grid-area: projects;
+  background: rgba(173, 216, 230, 0.26);
+}
+
+.project {
+  margin-bottom: 5px;
+}
+
+.project-title-bar {
+  display: flex;
+}
+
+.project-title-bar >* {
+  margin-right: 5px;
+}
+
+.project-title-bar h3 {
+  font-weight: bold;
+}
+
+.project-info {
+  padding-left: 20px;
+}
+
+
+/* SKILLS */
+.skills {
+  grid-area: skills;
+  background: rgba(173, 216, 230, 0.26);
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+  list-style-type: square;
+}
+
+.skills-list-item {
+  margin-left: 50px;
+}
+/* SCHOOLS */
+.school {
+  grid-area: school;
+  background: rgba(173, 216, 230, 0.26);
+}
+
+.school-item, .work-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 5px;
+}
+
+.school-name, .work-name {
+  font-weight: bold;
+}
+
+.school-date,
+.work-location,
+.work-date {
+  font-style: italic;
+}
+
+/* WORK */
+.work {
+  grid-area: work;
+  background: rgba(173, 216, 230, 0.26);
+}
+
+
+
+
+
+/* PRINTING */
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+}

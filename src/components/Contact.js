@@ -9,6 +9,7 @@ import {
   FaSoundcloud,
   FaFacebookMessenger
 } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Icon = styled.a`
   text-decoration: none;
@@ -22,7 +23,7 @@ const Icon = styled.a`
   }
 `;
 
-const Link = styled.a`
+const SiteLink = styled.a`
   color: ${props => props.theme.colors.linkColor};
   text-decoration: none;
   margin: 5px;
@@ -47,6 +48,12 @@ const ContactWrapper = styled.div`
     padding-right: 10px;
     border-right: 2px solid #464646;
   }
+  a {
+    text-decoration: none;
+    &:hover {
+      color: blue;
+    }
+  }
 `;
 
 const ContactSection = styled.div`
@@ -68,16 +75,16 @@ const Contact = () => {
         <Icon href="mailto:braxtonlemmon@gmail.com" target="_blank">
           <FiMail size={size} />
         </Icon>
-        <Link href="mailto:braxtonlemmon@gmail.com" target="_blank">braxtonlemmon@gmail.com</Link>
+        <SiteLink href="mailto:braxtonlemmon@gmail.com" target="_blank">braxtonlemmon@gmail.com</SiteLink>
       </ContactSection>
       <ContactSection>
         <p className='resume'>Resume:</p>
-        <Link className="view" href="https://braxtonlemmon.gitlab.io/resume/" target="blank">
+        <Link to="/resume" className="view">
           <p>View</p>
         </Link>
-        <Link href={`${process.env.PUBLIC_URL}/braxton_lemmon_resume.pdf`} download>
+        <SiteLink href={`${process.env.PUBLIC_URL}/braxton_lemmon_resume.pdf`} download>
           <p>Download</p>
-        </Link>
+        </SiteLink>
       </ContactSection>
       <ContactSection>
         <Icon href="https://m.me/braxton.lemmon" target="_blank">

@@ -63,7 +63,7 @@ const Header = () => {
       <Link to="/">
         <Lemon src={process.env.PUBLIC_URL + 'img/lemon.png'} />
       </Link>
-      <Link to="/">
+      <Link to="/resume">
         <MyName>Braxton Lemmon</MyName>
       </Link>
       <Responsive displayIn={["Tablet", "Laptop"]}>

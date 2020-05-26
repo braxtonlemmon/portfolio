@@ -7,6 +7,7 @@ import Home from "./Home.js";
 import Music from "./Music.js";
 import About from "./About.js";
 import Contact from "./Contact.js";
+import Resume from './Resume';
 import { Switch, Route, withRouter } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Content from './Content.js';
@@ -27,6 +28,7 @@ const Main = () => {
                 <Route path='/music' exact component={Music} />
                 <Route path='/about' exact component={About} />
                 <Route path='/contact' exact component={Contact} />
+                <Route path='/resume' exact component={Resume} />
               </Switch>
             </section>
           </CSSTransition>
