@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { letters, develop } from '../data/CrosswordData.js';
+import Tile from './Tile';
 
 const CrosswordContainer = styled.div`
   display: grid;
@@ -27,51 +28,6 @@ const CrosswordContainer = styled.div`
     grid-template-rows: repeat(9, 3.2em);
   }
 `;
-
-const Tile = styled.div`
-  background: ${props => props.letter ? 'black' : '#ebebeb'};
-  background: ${props => {
-    if (props.letter) {
-      return 'black';
-    } else if (props.accent) {
-      return '#c4c4c4';
-    } else {
-      return 'none';
-    }
-  }};
-
-  border: ${props => {
-    if (props.accent) {
-      return '2px dotted black';
-    } else {
-      return 'none';
-    }
-  }};
-
-  color: ${props => props.develop ? '#e0ff5d' : 'white'};
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.3em;
-  &:hover {
-    transform: ${props => props.letter ? 'rotate(10deg)' : 'none'};
-    background: ${props => {
-      if (props.accent) return 'green';
-    }}
-  }
-
-  @media only screen and (min-width: 41em) {
-    font-size: 1.8em;
-  }
-  @media only screen and (min-width: 62em) {
-    font-size: 2.2em;
-  }
-  @media only screen and (min-width: 84em) {
-    font-size: 2.5em;
-  }
-`
 
 const generateTiles = () => {
   let tiles = [];

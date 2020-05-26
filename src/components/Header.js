@@ -18,6 +18,7 @@ const HeaderBar = styled.header`
   grid-template-columns: 80px 1fr;
   z-index: 88;
   color: white;
+  box-shadow: 0 2px 2px grey;
   @media only screen and (min-width: 45em) {
     position: fixed;
     grid-template-columns: 120px 2fr 1fr;
@@ -30,7 +31,6 @@ const MyName = styled(H1)`
   @media only screen and (max-width: 26em) {
    font-size: 2em; 
   }
-
 `;
 
 const TopNav = styled.div`
@@ -40,7 +40,6 @@ const TopNav = styled.div`
 
 const Lemon = styled.img`
   height: 50px;
-
 `;
 
 const Header = () => {
