@@ -79,13 +79,16 @@ h2 {
 }
 .wrapper {
   padding: 10px;
-  height: 3508px;
-  width: 2480px;
-  height: 842px;
+  /* height: 3508px; */
+  /* width: 2480px; */
+  height: 1000px;
   width: 595px;
+  width: 95%;
+  max-width: 900px;
+  margin-bottom: 20px;
   display: grid;
   justify-content: center;
-  gap: 8px;
+  gap: 10px;
   grid-template-columns: 40% 60%;
   grid-template-rows: 1fr 1.3fr 1fr 1.3fr 1.3fr;
   grid-template-areas: 
@@ -141,6 +144,12 @@ h2 {
 
 .info-label {
   font-weight: bold;
+  display: none;
+}
+@media (min-width: 650px) {
+  .info-label {
+    display: initial; 
+  }
 }
 
 /* ALL MAIN SECTIONS */

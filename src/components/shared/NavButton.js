@@ -17,7 +17,7 @@ const NavButton = styled.button`
     border-bottom: ${props => props.top ? '2px solid white' : 'none'};
   }
   @media (min-width: 1000px) {
-    /* margin: 0 18px; */
+    margin: 0 18px;
   }
 `;
 
