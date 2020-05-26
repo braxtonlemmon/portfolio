@@ -33,6 +33,9 @@ const HeaderBar = styled.header`
 const MyName = styled(H1)`
   /* text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; */
   color: white;
+  @media (min-width: 460px) {
+    font-size: 2.8em;
+  }
   @media (min-width: 768px) {
     font-size: 1.7em;
   }
