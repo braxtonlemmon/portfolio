@@ -19,9 +19,10 @@ const HeaderBar = styled.header`
   z-index: 88;
   color: white;
   box-shadow: 0 2px 2px grey;
-  @media only screen and (min-width: 45em) {
+
+  @media only screen and (min-width: 768px) {
     position: fixed;
-    grid-template-columns: 120px 2fr 1fr;
+    grid-template-columns: 120px 1fr 1fr;
   }
   a {
     text-decoration: none;
@@ -32,14 +33,20 @@ const HeaderBar = styled.header`
 const MyName = styled(H1)`
   /* text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; */
   color: white;
-  @media only screen and (max-width: 26em) {
-   font-size: 2em; 
+  @media (min-width: 768px) {
+    font-size: 1.7em;
   }
+  @media (min-width: 1000px) {
+    font-size: 2.8em;
+  }
+  /* @media only screen and (max-width: 26em) {
+   font-size: 2em; 
+  } */
 `;
 
 const TopNav = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 `;
 
 const Lemon = styled.img`
