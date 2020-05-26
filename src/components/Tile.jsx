@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const TileBox = styled.div`
-  background: ${props => props.letter ? 'black' : '#ebebeb'};
+  background: ${props => props.letter ? 'black' : 'none'};
   background: ${props => {
     if (props.letter) {
       return 'black';
     } else if (props.accent) {
-      return `linear-gradient(${props.degree}deg, ${props.color}, ${props.color2})`
+      return `${props.color}`;
+      // return `linear-gradient(${props.degree}deg, ${props.color}, ${props.color2})`
     } else {
       return 'none';
     }
@@ -15,7 +16,7 @@ const TileBox = styled.div`
 
   border: ${props => {
     if (props.accent) {
-      return '2px dotted black';
+      return '4px solid black';
     } else {
       return 'none';
     }

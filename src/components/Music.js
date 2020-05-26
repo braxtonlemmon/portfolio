@@ -9,7 +9,6 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-
 `;
 
 const MusicContent = styled.div`
@@ -24,6 +23,7 @@ const MusicContent = styled.div`
 `;
 
 const MusicPlayer = styled.div`
+  background: ${props => props.theme.colors.boxColor};
   box-shadow: 5px 5px 3px grey, -5px 5px 3px grey;
   margin-top: 30px;
   padding: 10px;

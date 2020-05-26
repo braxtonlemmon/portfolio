@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const BioBox = styled.p`
   text-align: center;
-  font-size: 1.3em;
+  font-size: ${props => props.theme.fontSize.paragraph};
   line-height: 1.4em;
 `
 

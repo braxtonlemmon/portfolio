@@ -15,15 +15,18 @@ const HobbiesBox = styled.div`
 const Hobby = styled.span`
   padding: 8px;
   margin: 5px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   font-size: 1.3em;
-  background: #6464648f;
+  background: #0000007d;
+  color: white;
+  text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
   &:hover {
     background: url(${props => props.imgUrl});
     background-size: cover;
     background-position: center;
     color: transparent;
     transform: scale(1.1);
+    text-shadow: none;
   }
 `;
 

@@ -23,7 +23,7 @@ const Icon = styled.a`
 `;
 
 const Link = styled.a`
-  color: black;
+  color: ${props => props.theme.colors.linkColor};
   text-decoration: none;
   margin: 5px;
   &:hover {
@@ -38,6 +38,14 @@ const ContactWrapper = styled.div`
   @media only screen and (min-width: 23em) {
     font-size: 1.4rem;
   }
+  .resume {
+    margin-right: 10px;
+    color: #464646;
+  }
+  .view {
+    padding-right: 10px;
+    border-right: 2px solid #464646;
+  }
 `;
 
 const ContactSection = styled.div`
@@ -46,7 +54,7 @@ const ContactSection = styled.div`
   align-items: center;
   margin-top: 50px;
   padding: 10px;
-  background: #e1e1e1;
+  background: ${props => props.theme.colors.boxColor};
   box-shadow: 5px 5px 3px grey, -5px 5px 3px grey;
 `;
 
@@ -60,6 +68,15 @@ const Contact = () => {
           <FiMail size={size} />
         </Icon>
         <Link href="mailto:braxtonlemmon@gmail.com" target="_blank">braxtonlemmon@gmail.com</Link>
+      </ContactSection>
+      <ContactSection>
+        <p className='resume'>Resume:</p>
+        <Link className="view" href="https://braxtonlemmon.gitlab.io/resume/" target="blank">
+          <p>View</p>
+        </Link>
+        <Link href={`${process.env.PUBLIC_URL}/braxton_lemmon_resume.pdf`} download>
+          <p>Download</p>
+        </Link>
       </ContactSection>
       <ContactSection>
         <Icon href="https://m.me/braxton.lemmon" target="_blank">

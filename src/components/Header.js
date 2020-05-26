@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { H1 } from './shared/Headings.js';
 import { Responsive } from 'responsive-react';
 import NavButton from './shared/NavButton.js';
@@ -23,6 +23,10 @@ const HeaderBar = styled.header`
     position: fixed;
     grid-template-columns: 120px 2fr 1fr;
   }
+  a {
+    text-decoration: none;
+    outline: none;
+  }
 `;
 
 const MyName = styled(H1)`
@@ -40,13 +44,21 @@ const TopNav = styled.div`
 
 const Lemon = styled.img`
   height: 50px;
+  transition: transform 1s ease-in-out;
+  &:hover {
+    transform: rotate(360deg);
+  }
 `;
 
 const Header = () => {
   return (
     <HeaderBar>
-      <Lemon src={process.env.PUBLIC_URL + 'img/lemon.png'} />
-      <MyName>Braxton Lemmon</MyName>
+      <Link to="/">
+        <Lemon src={process.env.PUBLIC_URL + 'img/lemon.png'} />
+      </Link>
+      <Link to="/">
+        <MyName>Braxton Lemmon</MyName>
+      </Link>
       <Responsive displayIn={["Tablet", "Laptop"]}>
         <TopNav>
           <Link to="/">

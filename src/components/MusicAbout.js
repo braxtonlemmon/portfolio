@@ -7,11 +7,11 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   box-shadow: 5px 5px 3px grey, -5px 5px 3px grey;
-  background: #e1e1e1;
+  background: ${props => props.theme.colors.boxColor};
   padding: 10px;
   align-items: center;
   text-align: center;
-  font-size: 20px;
+  font-size: ${props => props.theme.fontSize.paragraph};
   width: 70%;
   
   @media only screen and (min-width: 86em) {

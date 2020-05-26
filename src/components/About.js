@@ -19,7 +19,7 @@ const AboutBox = styled.div`
   justify-content: center;
   align-items: center;
   margin: 15px 0;
-  background: ${props => props.bio ? '#e1e1e1' : '#e1e1e1'};
+  background: ${props => props.theme.colors.boxColor};
   padding: 10px;
   box-shadow: 5px 5px 3px grey, -5px 5px 3px grey;
   @media only screen and (min-width: 43em) {
@@ -29,7 +29,7 @@ const AboutBox = styled.div`
 
 const TechnologyBox = styled(AboutBox)`
   width: 90%;
-  background: #e1e1e1;
+  background: ${props => props.theme.colors.boxColor};
   @media only screen and (min-width: 43em) {
     width: 80%;
   }
