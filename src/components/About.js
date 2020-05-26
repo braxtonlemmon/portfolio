@@ -22,7 +22,10 @@ const AboutBox = styled.div`
   background: ${props => props.theme.colors.boxColor};
   padding: 10px;
   box-shadow: 5px 5px 3px grey, -5px 5px 3px grey;
-  @media only screen and (min-width: 43em) {
+  @media screen and (min-width:  700px) {
+    max-width: 70%;
+  }
+  @media only screen and (min-width: 1100px) {
     max-width: 50%;
   }
 `
