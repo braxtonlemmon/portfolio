@@ -9,6 +9,7 @@ const NavButton = styled.button`
   color: ${props => props.top ? 'white' : 'black'};
   border: none;
   font-size: 1.5em;
+  font-weight: 500;
   outline: none;
   cursor: pointer;
   &:hover {
