@@ -41,6 +41,7 @@ const ContactWrapper = styled.div`
   .resume {
     margin-right: 10px;
     color: #464646;
+    font-weight: 600;
   }
   .view {
     padding-right: 10px;

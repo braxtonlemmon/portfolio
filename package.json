@@ -17,7 +17,9 @@
     "styled-components": "^5.0.1",
     "styled-reset": "^4.1.0",
     "typeface-acme": "0.0.72",
-    "typeface-bungee-shade": "0.0.71"
+    "typeface-barlow": "0.0.71",
+    "typeface-bungee-shade": "0.0.71",
+    "typeface-open-sans": "0.0.75"
   },
   "scripts": {
     "start": "react-scripts start",

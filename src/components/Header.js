@@ -30,7 +30,7 @@ const HeaderBar = styled.header`
 `;
 
 const MyName = styled(H1)`
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  /* text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; */
   color: white;
   @media only screen and (max-width: 26em) {
    font-size: 2em; 

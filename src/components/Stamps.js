@@ -37,7 +37,7 @@ const Stamp = styled.div`
   border-radius: 20px;
   height: 110px;
   width: 110px;
-
+  text-align: center;
 `;
 
 const Label = styled.h3`

@@ -16,7 +16,10 @@ const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
     user-select: none;
-    font-family: 'Acme', sans-serif;
+    /* font-family: 'Acme', sans-serif; */
+    /* font-family: sans-serif; */
+    /* font-family: 'Barlow', sans-serif; */
+    font-family: 'Open Sans', sans-serif; 
   }
 `
 

@@ -13,7 +13,10 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  font-family: 'Acme', sans-serif;
+  /* font-family: 'Acme', sans-serif; */
+  /* font-family: "Barlow", sans-serif; */
+  /* font-family: sans-serif; */
+  font-family: "Open Sans", sans-serif;
 `;
 
 

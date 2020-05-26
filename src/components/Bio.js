@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const BioBox = styled.p`
-  text-align: center;
+  text-align: justify;
   font-size: ${props => props.theme.fontSize.paragraph};
   line-height: 1.4em;
+  padding: 15px 25px;
 `
 
 const bioText = `
